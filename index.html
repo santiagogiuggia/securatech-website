@@ -237,23 +237,20 @@
             z-index: 0;
         }
         /* Estilos para el logotipo de fondo en la sección Hero */
-        .hero-background-logo {
+        .hero-background-logo-img { /* Nueva clase para el img */
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 100%; /* Ajustado para cubrir todo el ancho */
-            height: 100%; /* Ajustado para cubrir todo el alto */
-            background-image: url('assets/logotipo-securatech-2.png'); /* Ahora usa el nuevo logo */
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover; /* Cambiado a cover para que cubra toda la parte gris */
-            opacity: 0.15; /* Opacidad ajustada, puedes modificarla entre 0.05 (muy sutil) y 0.3 (más visible) */
+            width: 100%; /* Cubre todo el ancho */
+            height: 100%; /* Cubre todo el alto */
+            object-fit: cover; /* Asegura que la imagen cubra el área, recortando si es necesario */
+            opacity: 0.15; /* Opacidad ajustada, puedes modificarla entre 0.05 y 0.3 */
             z-index: 1; /* Encima de la superposición del video, debajo del contenido */
         }
         .hero-content {
             position: relative; /* Necesita ser relativo para que el z-index funcione */
-            z-index: 2; /* Necesita ser más alto que el hero-background-logo */
+            z-index: 2; /* Necesita ser más alto que el hero-background-logo-img */
             padding: 1rem;
         }
 
@@ -297,7 +294,8 @@
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <!-- Logotipo de SecuraTech Solutions -->
             <a href="#" class="mb-4 md:mb-0 flex items-center">
-                <img src="assets/logotipo-securatech-2.png" alt="Logotipo SecuraTech Solutions" class="h-16 md:h-20 w-auto"> <!-- Ahora usa el nuevo logo -->
+                <!-- Ajuste del tamaño del logo de la cabecera -->
+                <img src="assets/logotipo-securatech-2.png" alt="Logotipo SecuraTech Solutions" class="h-20 md:h-24 w-auto">
             </a>
             <!-- Navegación Principal -->
             <nav>
@@ -329,8 +327,8 @@
             Cargando video...
         </video>
         <div class="video-overlay"></div>
-        <!-- Nuevo div para el logotipo en el fondo con z-index y opacidad -->
-        <div class="hero-background-logo"></div>
+        <!-- IMAGEN del logotipo de fondo en la sección Hero (cambiado de div a img) -->
+        <img src="assets/logotipo-securatech-2.png" alt="Logotipo SecuraTech Solutions de fondo" class="hero-background-logo-img">
         <div class="hero-content container mx-auto">
             <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
                 Seguridad Integral: Tu Tranquilidad, Nuestra Prioridad
