@@ -43,7 +43,8 @@
         "latitude": -31.430125996917056,
         "longitude": -64.19418702362411
       },
-      "hasMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.419143891799!2d-64.19418702362411!3d-31.430125996917056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28bd70a3463%3A0x5ac5d73b7bcb88e9!2sObispo%20Trejo%201268%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1750200170818!5m2!1ses!2sar", <!-- Reemplaza con tu URL de Google Maps -->
+      "hasMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.419143891799!2d-64.19418702362411!3d-31.430125996917056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28bd70a3463%3A0x5ac5d73b7bcb88e9!2sObispo%20Trejo%201268%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1750200170818!5m2!1ses!2sar"
+      }, <!-- Reemplaza con tu URL de Google Maps -->
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
@@ -290,22 +291,21 @@
 <body class="bg-gray-100 text-gray-800">
 
     <!-- Sección de Encabezado (Header) -->
-    <header class="header-bg-custom shadow-md py-8 px-4 rounded-b-lg">
+    <header class="header-bg-custom shadow-md py-4 md:py-8 px-4 rounded-b-lg">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-            <!-- Logotipo de SecuraTech Solutions -->
-            <a href="#" class="mb-4 md:mb-0 flex items-center">
-                <!-- Ajuste del tamaño del logo de la cabecera -->
-                <!-- Se eliminan clases de altura fijas y se usan max-h-full y object-contain para asegurar que el logo se vea completo y dentro del espacio disponible -->
-                <img src="assets/logotipo-securatech-2.png" alt="Logotipo SecuraTech Solutions" class="w-auto max-h-full object-contain">
-            </a>
             <!-- Navegación Principal -->
-            <nav>
+            <nav class="w-full flex flex-col md:flex-row md:items-center md:justify-start"> <!-- Use flex para alinear logo y enlaces de navegación -->
+                <!-- Logotipo de SecuraTech Solutions - MOVIDO AQUÍ -->
+                <a href="#inicio" class="flex items-center mb-4 md:mb-0 md:mr-8"> <!-- Enlace del logo -->
+                    <!-- Se utiliza h-16 para dar un tamaño consistente al logo en la cabecera -->
+                    <img src="assets/logotipo-securatech-2.png" alt="Logotipo SecuraTech Solutions" class="h-16 w-auto object-contain">
+                </a>
                 <ul class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-8 text-lg">
                     <li><a href="#inicio" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Inicio</a></li>
                     <li><a href="#servicios" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Servicios</a></li>
                     <li><a href="#soluciones-inteligentes" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Soluciones Inteligentes</a></li>
                     <li><a href="#soluciones-industriales" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Soluciones Industriales</a></li>
-                    <li><a href="#metodologia" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Metodología</a></li> <!-- Nuevo enlace -->
+                    <li><a href="#metodologia" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Metodología</a></li>
                     <li><a href="#marcas" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Marcas</a></li>
                     <li><a href="#productos" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Productos</a></li>
                     <li><a href="#proyectos" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Proyectos</a></li>
@@ -328,9 +328,9 @@
             Cargando video...
         </video>
         <div class="video-overlay"></div>
-        <!-- IMAGEN del logotipo de fondo en la sección Hero (cambiado de div a img) -->
-        <!-- IMPORTANTE: Asegúrate de que el archivo "assets/fsd.png" exista en la carpeta "assets" y tenga un tamaño de archivo y dimensiones adecuadas para la web. -->
-        <img src="assets/fsd.png" alt="Logotipo FSD de fondo" class="hero-background-logo-img">
+        <!-- IMAGEN del logotipo de fondo en la sección Hero -->
+        <!-- Ruta de la imagen actualizada a 'assets/logotipo-securatech-2.png' y se mantiene centrada -->
+        <img src="assets/logotipo-securatech-2.png" alt="Logotipo SecuraTech Solutions de fondo" class="hero-background-logo-img">
         <div class="hero-content container mx-auto">
             <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
                 Seguridad Integral: Tu Tranquilidad, Nuestra Prioridad
