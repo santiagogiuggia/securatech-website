@@ -25,7 +25,7 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "SecuraTech Solutions",
-      "image": "assets/logotipo securatech (2).png", <!-- Ahora apunta al nuevo logo -->
+      "image": "assets/logotipo-securatech-2.png, <!-- Ahora apunta al nuevo logo -->
       "@id": "https://www.securatechs.com.ar/#organization",
       "url": "https://www.securatechs.com.ar/",
       "telephone": "+54 9 351 7659654",
@@ -243,8 +243,8 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            max-width: 70%; /* Reducir el tamaño máximo */
-            max-height: 70%; /* Reducir el tamaño máximo */
+            max-width: 80%; /* Ajuste de tamaño para mayor visibilidad */
+            max-height: 80%; /* Ajuste de tamaño para mayor visibilidad */
             width: auto; /* Permite que el ancho se ajuste proporcionalmente */
             height: auto; /* Permite que la altura se ajuste proporcionalmente */
             object-fit: contain; /* Asegura que la imagen completa sea visible */
@@ -293,29 +293,31 @@
 <body class="bg-gray-100 text-gray-800">
 
     <!-- Sección de Encabezado (Header) -->
-    <header class="header-bg-custom shadow-md py-6 md:py-8 px-4 rounded-b-lg">
+    <header class="header-bg-custom shadow-md py-4 px-4 rounded-b-lg">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <!-- Navegación Principal -->
-            <nav class="w-full flex flex-col md:flex-row md:items-center md:justify-start"> <!-- Use flex para alinear logo y enlaces de navegación -->
-                <!-- Logotipo de SecuraTech Solutions -->
-                <a href="#inicio" class="flex items-center h-auto min-h-[7rem] md:min-h-[8rem] max-h-[10rem] w-auto"> <!-- Contenedor del logo con altura mínima y flexible -->
-                    <img src="assets/logotipo securatech (2).png" alt="Logotipo SecuraTech Solutions" class="h-full w-auto object-contain"> <!-- Logo llena la altura y mantiene proporción -->
-                </a>
-                <ul class="flex flex-wrap justify-center md:flex-nowrap md:justify-end space-x-4 md:space-x-6 text-sm md:text-lg">
-                    <li><a href="#inicio" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Inicio</a></li>
-                    <li><a href="#servicios" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Servicios</a></li>
-                    <li><a href="#soluciones-inteligentes" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Soluciones Inteligentes</a></li>
-                    <li><a href="#soluciones-industriales" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Soluciones Industriales</a></li>
-                    <li><a href="#metodologia" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Metodología</a></li>
-                    <li><a href="#marcas" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Marcas</a></li>
-                    <li><a href="#productos" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Productos</a></li>
-                    <li><a href="#proyectos" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Proyectos</a></li>
-                    <li><a href="#casos-exito" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Casos de Éxito</a></li>
-                    <li><a href="#testimonios" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Testimonios</a></li>
-                    <li><a href="#faq" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Preguntas Frecuentes</a></li>
-                    <li><a href="#blog" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Blog y Noticias</a></li>
-                    <li><a href="#nosotros" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Nosotros</a></li>
-                    <li><a href="#contacto" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Contacto</a></li>
+            <nav class="w-full">
+                <ul class="flex flex-col md:flex-row items-center md:items-stretch md:justify-end md:flex-nowrap space-y-3 md:space-y-0 text-lg">
+                    <!-- Logotipo de SecuraTech Solutions como primer elemento de navegación -->
+                    <li class="h-auto w-auto max-h-24 md:mr-auto"> <!-- md:mr-auto para empujar los demás a la derecha -->
+                        <a href="#inicio" class="flex items-center h-full w-auto">
+                            <img src="assets/logotipo-securatech-2.png" alt="Logotipo SecuraTech Solutions" class="h-full w-auto object-contain">
+                        </a>
+                    </li>
+                    <li><a href="#inicio" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Inicio</a></li>
+                    <li><a href="#servicios" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Servicios</a></li>
+                    <li><a href="#soluciones-inteligentes" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Soluciones Inteligentes</a></li>
+                    <li><a href="#soluciones-industriales" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Soluciones Industriales</a></li>
+                    <li><a href="#metodologia" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Metodología</a></li>
+                    <li><a href="#marcas" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Marcas</a></li>
+                    <li><a href="#productos" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Productos</a></li>
+                    <li><a href="#proyectos" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Proyectos</a></li>
+                    <li><a href="#casos-exito" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Casos de Éxito</a></li>
+                    <li><a href="#testimonios" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Testimonios</a></li>
+                    <li><a href="#faq" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Preguntas Frecuentes</a></li>
+                    <li><a href="#blog" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Blog y Noticias</a></li>
+                    <li><a href="#nosotros" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Nosotros</a></li>
+                    <li><a href="#contacto" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -330,8 +332,7 @@
         </video>
         <div class="video-overlay"></div>
         <!-- IMAGEN del logotipo de fondo en la sección Hero -->
-        <!-- Ruta de la imagen actualizada a 'assets/logotipo securatech (2).png' y se mantiene centrada -->
-        <img src="assets/logotipo securatech (2).png" alt="Logotipo SecuraTech Solutions de fondo" class="hero-background-logo-img">
+        <img src="assets/logotipo-securatech-2.png" alt="Logotipo SecuraTech Solutions de fondo" class="hero-background-logo-img">
         <div class="hero-content container mx-auto">
             <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
                 Seguridad Integral: Tu Tranquilidad, Nuestra Prioridad
@@ -1053,7 +1054,7 @@
     <!-- Botón Flotante de WhatsApp -->
     <a href="https://wa.me/5493517659654" class="whatsapp-float" target="_blank" title="Envíanos un mensaje por WhatsApp">
         <svg class="whatsapp-icon" viewBox="0 0 24 24">
-            <path d="M12.04 2C7.35 2 3.57 5.79 3.57 10.48C3.57 12.07 4.05 13.59 4.88 14.93L3.02 21.07L9.21 19.2C10.49 19.95 11.99 20.37 13.53 20.37C18.22 20.37 22 16.59 22 11.9C22 7.21 18.22 2 13.53 2C12.04 2 12.04 2 12.04 2ZM17.15 15.54C16.92 15.93 16.51 15.99 16.27 15.75L13.78 13.72C13.54 13.48 13.16 13.43 12.91 13.68C12.44 14.15 11.83 14.49 11.2 14.49C10.57 14.49 9.96 14.15 9.49 13.68C9.25 13.43 8.87 13.48 8.63 13.72L6.14 15.75C5.9 15.99 5.49 15.93 5.26 15.54C5.03 15.15 5.09 14.74 5.33 14.5L7.82 12.47C8.06 12.23 8.11 11.85 7.87 11.6L5.38 9.57C5.14 9.33 5.2 8.92 5.43 8.53C5.66 8.14 6.07 8.08 6.31 8.32L8.8 10.35C9.04 10.59 9.42 10.64 9.67 10.39C10.14 9.92 10.75 9.58 11.38 9.58C12.01 9.58 12.62 9.92 13.09 10.39C13.33 10.64 13.71 10.59 13.96 10.35L16.45 8.32C16.69 8.08 17.1 8.14 17.33 8.53C17.56 8.92 17.51 9.33 17.27 9.57L14.78 11.6C14.54 11.85 14.49 12.23 14.73 12.47L17.22 14.5C17.46 14.74 17.51 15.15 17.15 15.54Z"/>
+            <path d="M12.04 2C7.35 2 3.57 5.79 3.57 10.48C3.57 12.07 4.05 13.59 4.88 14.93L3.02 21.07L9.21 19.2C10.49 19.95 11.99 20.37 13.53 20.37C18.22 20.37 22 16.59 22 11.9C22 7.21 18.22 2 13.53 2C12.04 2 12.04 2 12.04 2ZM17.15 15.54C16.92 15.93 16.51 15.99 16.27 15.75L13.78 13.72C13.54 13.48 13.16 13.43 12.91 13.68C12.44 14.15 11.83 14.49 11.2 14.49C10.57 14.49 9.96 14.15 9.49 13.68C9.25 13.43 8.87 13.48 8.63 13.72L6.14 15.75C5.9 15.99 5.49 15.93 5.26 15.54C5.03 15.15 5.09 14.74 5.33 14.5L7.82 12.47C8.06 12.23 8.11 11.85 7.87 11.6L5.38 9.57C5.14 9.33 5.2 8.92 5.43 8.53C5.66 8.14 6.07 8.08 6.31 8.32L8.8 10.35C9.04 10.59 9.42 10.64 9.67 10.39C10.14 = 9.92 10.75 9.58 11.38 9.58C12.01 9.58 12.62 9.92 13.09 10.39C13.33 10.64 13.71 10.59 13.96 10.35L16.45 8.32C16.69 8.08 17.1 8.14 17.33 8.53C17.56 8.92 17.51 9.33 17.27 9.57L14.78 11.6C14.54 11.85 14.49 12.23 14.73 12.47L17.22 14.5C17.46 14.74 17.51 15.15 17.15 15.54Z"/>
         </svg>
     </a>
 
