@@ -25,7 +25,7 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "SecuraTech Solutions",
-      "image": "assets/logotipo-securatech-2.png, <!-- Ahora apunta al nuevo logo -->
+      "image": "assets/logotipo-securatech-2.png", <!-- Ahora apunta al nuevo logo -->
       "@id": "https://www.securatechs.com.ar/#organization",
       "url": "https://www.securatechs.com.ar/",
       "telephone": "+54 9 351 7659654",
@@ -213,8 +213,9 @@
             justify-content: center;
             color: white;
             text-align: center;
-            border-bottom-left-radius: 0.5rem; /* rounded-b-lg */
-            border-bottom-right-radius: 0.5rem; /* rounded-b-lg */
+            /* Eliminamos los bordes redondeados inferiores para que el fondo se integre */
+            /* border-bottom-left-radius: 0.5rem; */
+            /* border-bottom-right-radius: 0.5rem; */
         }
         .hero-video {
             position: absolute;
@@ -299,7 +300,7 @@
             <nav class="w-full">
                 <ul class="flex flex-col md:flex-row items-center md:items-stretch md:justify-end md:flex-nowrap space-y-3 md:space-y-0 text-lg">
                     <!-- Logotipo de SecuraTech Solutions como primer elemento de navegación -->
-                    <li class="h-auto w-auto max-h-24 md:mr-auto"> <!-- md:mr-auto para empujar los demás a la derecha -->
+                    <li class="h-auto w-auto max-h-20 md:mr-auto"> <!-- Logo más pequeño: max-h-20 -->
                         <a href="#inicio" class="flex items-center h-full w-auto">
                             <img src="assets/logotipo-securatech-2.png" alt="Logotipo SecuraTech Solutions" class="h-full w-auto object-contain">
                         </a>
@@ -334,13 +335,13 @@
         <!-- IMAGEN del logotipo de fondo en la sección Hero -->
         <img src="assets/logotipo-securatech-2.png" alt="Logotipo SecuraTech Solutions de fondo" class="hero-background-logo-img">
         <div class="hero-content container mx-auto">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight"> <!-- Aumentado el tamaño del título -->
                 Seguridad Integral: Tu Tranquilidad, Nuestra Prioridad
             </h1>
-            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">
+            <p class="text-xl md:text-3xl mb-10 max-w-3xl mx-auto"> <!-- Aumentado el tamaño del párrafo -->
                 En SecuraTech Solutions, protegemos tu hogar, empresa e industria con sistemas de seguridad de vanguardia y servicio profesional en Córdoba.
             </p>
-            <a href="#contacto" class="inline-block bg-white text-green-700 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-200 transition duration-300 ease-in-out transform hover:scale-105 card-shadow">
+            <a href="#contacto" class="inline-block bg-white text-green-700 font-bold py-4 px-10 rounded-full text-xl hover:bg-gray-200 transition duration-300 ease-in-out transform hover:scale-105 card-shadow"> <!-- Botón más grande -->
                 ¡Protege tu Espacio Hoy!
             </a>
         </div>
