@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecuraTech Solutions: Soluciones de Seguridad Integral para Edificios en Córdoba</title>
+
+    <!-- Meta Tags para SEO Básico -->
+    <meta name="description" content="SecuraTech Solutions: Instalación y mantenimiento de sistemas de seguridad electrónica avanzados en Córdoba, Argentina. Ofrecemos porteros, CCTV, alarmas de incendio, control de acceso y cableado estructurado para consorcios, edificios, empresas y entornos industriales.">
+    <meta name="keywords" content="seguridad electrónica Córdoba, porteros eléctricos, CCTV Córdoba, alarmas incendio edificios, control de acceso, cableado estructurado, seguridad consorcios, empresas seguridad Argentina, SecuraTech Solutions, soluciones inteligentes, edificios inteligentes, seguridad industrial, fábricas, almacenes">
+    <meta name="author" content="SecuraTech Solutions">
+    <meta name="robots" content="index, follow"> <!-- Indica a los motores de búsqueda que indexen y sigan los enlaces -->
+
+    <!-- Open Graph Tags para Redes Sociales -->
+    <meta property="og:title" content="SecuraTech Solutions: Seguridad Integral para Edificios y Empresas">
+    <meta property="og:description" content="Encuentra las mejores soluciones de seguridad electrónica en Córdoba. Expertos en porteros, CCTV, alarmas y control de acceso.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.securatechs.com.ar/"> <!-- Reemplaza con tu URL real -->
+    <meta property="og:image" content="https://placehold.co/1200x630/1a1a1a/34d399?text=SecuraTech+Solutions+Logo"> <!-- URL de una imagen representativa para compartir -->
+    <meta property="og:locale" content="es_AR">
+
+    <!-- Schema Markup (JSON-LD) para Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "SecuraTech Solutions",
+      "image": "https://placehold.co/500x500/1a1a1a/34d399?text=SecuraTech+Solutions+Logo",
+      "@id": "https://www.securatechs.com.ar/#organization",
+      "url": "https://www.securatechs.com.ar/",
+      "telephone": "+54 9 11 1234 5678",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle Falsa 123",
+        "addressLocality": "Córdoba",
+        "addressRegion": "Córdoba",
+        "postalCode": "5000",
+        "addressCountry": "AR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -31.4167,
+        "longitude": -64.1833
+      },
+      "hasMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.419143891799!2d-64.19418702362411!3d-31.430125996917056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28bd70a3463%3A0x5ac5d73b7bcb88e9!2sObispo%20Trejo%201268%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1750200170818!5m2!1ses!2sar", <!-- Reemplaza con tu URL de Google Maps -->
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/SecuraTechSolutions", <!-- Reemplaza con tus redes sociales -->
+        "https://www.instagram.com/SecuraTechSolutions",
+        "https://www.linkedin.com/company/SecuraTechSolutions"
+      ]
+    }
+    </script>
+
+    <!-- Incluye Tailwind CSS CDN para un estilo moderno y responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de la nueva fuente Poppins desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos personalizados para la fuente Poppins */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Clase para el efecto de sombra sutil en las tarjetas */
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        /* Estilo para el logo de texto con degradado (adaptado a la paleta verde) */
+        .gradient-text {
+            background: linear-gradient(to right, #16a34a, #22c55e); /* Verde oscuro a verde brillante */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+        /* Estilos para que el iframe sea responsivo y se adapte al contenedor */
+        .video-responsive {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            width: 100%;
+            border-radius: 0.5rem; /* rounded-lg */
+        }
+        .video-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        /* Estilos para el botón de "Volver Arriba" */
+        #backToTopBtn {
+            display: none; /* Oculto por defecto */
+            position: fixed; /* Fijo en la pantalla */
+            bottom: 20px; /* 20px desde la parte inferior */
+            right: 20px; /* 20px desde la derecha */
+            z-index: 99; /* Asegura que esté por encima de otros elementos */
+            border: none; /* Sin borde */
+            outline: none; /* Sin contorno al enfocar */
+            background-color: #10B981; /* Color de fondo (verde) */
+            color: white; /* Color del texto/icono */
+            cursor: pointer; /* Cursor de puntero al pasar el ratón */
+            padding: 15px; /* Relleno */
+            border-radius: 50%; /* Borde redondo */
+            font-size: 18px; /* Tamaño del icono */
+            transition: background-color 0.3s, opacity 0.3s, transform 0.3s; /* Transiciones suaves */
+            opacity: 0.8;
+            transform: scale(1);
+        }
+        #backToTopBtn:hover {
+            background-color: #059669; /* Verde más oscuro al pasar el ratón */
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        /* Estilo para mensajes de error de validación */
+        .error-message {
+            color: #ef4444; /* Rojo Tailwind 500 */
+            font-size: 0.875rem; /* text-sm */
+            margin-top: 0.25rem; /* mt-1 */
+        }
+        .input-error {
+            border-color: #ef4444; /* Borde rojo */
+        }
+        /* Color de fondo del encabezado personalizado */
+        .header-bg-custom {
+            background-color: #1a1a1a; /* Tono oscuro para que el logo resalte */
+        }
+        /* Ajuste de color de texto para elementos de navegación en header oscuro */
+        .header-nav-link {
+            color: #d1d5db; /* Gris claro para contraste */
+        }
+        .header-nav-link:hover {
+            color: #34d399; /* Verde claro al pasar el ratón */
+        }
+
+        /* Animación de entrada para secciones (opcional, se activa con JS) */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Hover effects for cards */
+        .service-card, .brand-card, .product-card, .project-card, .testimonial-card, .blog-card, .faq-item, .case-study-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .service-card:hover, .brand-card:hover, .product-card:hover, .project-card:hover, .testimonial-card:hover, .blog-card:hover, .faq-item:hover, .case-study-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Estilos para el botón flotante de WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 90px; /* Arriba del botón de volver arriba */
+            right: 20px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #1DA851;
+        }
+        /* Icono de WhatsApp (SVG simplificado) */
+        .whatsapp-icon {
+            fill: currentColor; /* Usa el color del texto del padre */
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Estilos para la sección Hero con video de fondo */
+        .hero-video-container {
+            position: relative;
+            width: 100%;
+            height: 70vh; /* Altura de la sección Hero */
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            border-bottom-left-radius: 0.5rem; /* rounded-b-lg */
+            border-bottom-right-radius: 0.5rem; /* rounded-b-lg */
+        }
+        .hero-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            background-size: cover;
+        }
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Oscurece el video para que el texto sea legible */
+            z-index: 0;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            padding: 1rem; /* Añadir padding para móviles */
+        }
+
+        /* Estilos para el mapa de Google */
+        .google-map-container {
+            width: 100%;
+            height: 400px; /* Altura predeterminada del mapa */
+            border-radius: 0.5rem; /* rounded-lg */
+            overflow: hidden; /* Para asegurar que el radio de borde se aplique al iframe */
+            margin-top: 2rem; /* Espacio superior */
+        }
+        .google-map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Estilos para la Metodología de Trabajo */
+        .step-card {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease-in-out;
+            border-bottom: 4px solid #10B981; /* Borde inferior verde */
+        }
+        .step-card:hover {
+            transform: translateY(-8px);
+        }
+        .step-icon {
+            font-size: 3.5rem; /* text-6xl */
+            color: #10B981; /* Verde esmeralda */
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Sección de Encabezado (Header) -->
+    <header class="header-bg-custom shadow-md p-4 rounded-b-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <!-- Logotipo de SecuraTech Solutions - Placeholder -->
+            <a href="#" class="mb-4 md:mb-0 flex items-center">
+                <img src="https://placehold.co/200x60/1a1a1a/34d399?text=SECURTECH+LOGO" alt="Logotipo SecuraTech Solutions" class="h-16 md:h-20 w-auto">
+            </a>
+            <!-- Navegación Principal -->
+            <nav>
+                <ul class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-8 text-lg">
+                    <li><a href="#inicio" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Inicio</a></li>
+                    <li><a href="#servicios" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Servicios</a></li>
+                    <li><a href="#soluciones-inteligentes" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Soluciones Inteligentes</a></li>
+                    <li><a href="#soluciones-industriales" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Soluciones Industriales</a></li>
+                    <li><a href="#metodologia" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Metodología</a></li> <!-- Nuevo enlace -->
+                    <li><a href="#marcas" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Marcas</a></li>
+                    <li><a href="#productos" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Productos</a></li>
+                    <li><a href="#proyectos" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Proyectos</a></li>
+                    <li><a href="#casos-exito" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Casos de Éxito</a></li>
+                    <li><a href="#testimonios" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Testimonios</a></li>
+                    <li><a href="#faq" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Preguntas Frecuentes</a></li>
+                    <li><a href="#blog" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Blog y Noticias</a></li>
+                    <li><a href="#nosotros" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Nosotros</a></li>
+                    <li><a href="#contacto" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Hero (Destacado Principal) con Video de Fondo -->
+    <section id="inicio" class="hero-video-container">
+        <video autoplay muted loop class="hero-video">
+            <!-- Video de ejemplo. Reemplaza con tu propio video mp4 o webm. -->
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-security-cameras-on-building-1087-large.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+        <div class="video-overlay"></div>
+        <div class="hero-content container mx-auto">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                Seguridad Integral: Tu Tranquilidad, Nuestra Prioridad
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">
+                En SecuraTech Solutions, protegemos tu hogar, empresa e industria con sistemas de seguridad de vanguardia y servicio profesional en Córdoba.
+            </p>
+            <a href="#contacto" class="inline-block bg-white text-green-700 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-200 transition duration-300 ease-in-out transform hover:scale-105 card-shadow">
+                ¡Protege tu Espacio Hoy!
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="py-16 px-4 fade-in-section">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-green-700 mb-12">Nuestros Servicios Esenciales</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Tarjeta de Servicio: Porteros e Intercomunicadores -->
+                <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                    <div class="text-5xl text-green-500 mb-6 text-center">
+                        📞
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Porteros e Intercomunicadores</h3>
+                    <p class="text-gray-600 text-center">
+                        Sistemas IP para control de acceso inteligente. Comunicación fluida y gestión remota, maximizando la seguridad en tu edificio.
+                    </p>
+                </div>
+
+                <!-- Tarjeta de Servicio: Sistemas CCTV -->
+                <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                    <div class="text-5xl text-green-500 mb-6 text-center">
+                        📹
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">CCTV y Videovigilancia</h3>
+                    <p class="text-gray-600 text-center">
+                        Cámaras HD con IA y analíticas avanzadas para monitoreo 24/7. Detección proactiva de amenazas, visión clara día y noche.
+                    </p>
+                </div>
+
+                <!-- Tarjeta de Servicio: Alarmas de Incendio -->
+                <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                    <div class="text-5xl text-green-500 mb-6 text-center">
+                        🔥
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Alarmas de Incendio</h3>
+                    <p class="text-gray-600 text-center">
+                        Sistemas de detección temprana para proteger vidas y bienes. Alertas inmediatas y conectividad para una respuesta rápida en emergencias.
+                    </p>
+                </div>
+
+                <!-- Tarjeta de Servicio: Seguridad Eléctrica -->
+                <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                    <div class="text-5xl text-green-500 mb-6 text-center">
+                        ⚡
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Seguridad Eléctrica y Cableado</h3>
+                    <p class="text-gray-600 text-center">
+                        Instalaciones eléctricas certificadas y cableado estructurado. Garantizamos rendimiento óptimo, eficiencia y seguridad sin riesgos.
+                    </p>
+                </div>
+
+                <!-- Tarjeta de Servicio: Alarmas de Intrusión -->
+                <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                    <div class="text-5xl text-green-500 mb-6 text-center">
+                        🚨
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Alarmas de Intrusión</h3>
+                    <p class="text-gray-600 text-center">
+                        Sistemas anti-robo con sensores de movimiento y contacto, conectados a centrales de monitoreo. Protección inteligente 24/7.
+                    </p>
+                </div>
+
+                <!-- Tarjeta de Servicio: Control de Acceso -->
+                <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                    <div class="text-5xl text-green-500 mb-6 text-center">
+                        🔑
+                    </div>
+                    <h3 class="2xl font-semibold text-gray-900 mb-4 text-center">Control de Acceso</h3>
+                    <p class="text-gray-600 text-center">
+                        Gestiona el acceso a áreas restringidas con tecnología biométrica, tarjetas o códigos. Seguridad sin fisuras y control total.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Nueva Sección: Soluciones Inteligentes para Edificios -->
+    <section id="soluciones-inteligentes" class="py-16 px-4 bg-gray-100 fade-in-section">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-green-700 mb-12">Soluciones Inteligentes para Tu Edificio</h2>
+            <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
+                Integramos tecnología de vanguardia para crear entornos seguros, eficientes y conectados, ideales para edificios residenciales y comerciales.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tarjeta de Solución: Videovigilancia con IA -->
+                <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                    <div class="mb-6 text-center">
+                        <img src="https://placehold.co/100x100/e0e0e0/333333?text=C%C3%A1mara+IA" alt="[Image of Cámara con Inteligencia Artificial y Detección]" class="mx-auto w-24 h-24 object-contain">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Videovigilancia con IA</h3>
+                    <p class="text-gray-600 text-center">
+                        Cámaras de alta resolución con análisis de video avanzado. Detección de intrusos y reconocimiento facial para una seguridad superior.
+                    </p>
+                </div>
+
+                <!-- Tarjeta de Solución: Control de Acceso Integrado -->
+                <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                    <div class="mb-6 text-center">
+                        <img src="https://placehold.co/100x100/e0e0e0/333333?text=Acceso+Biom%C3%A9trico" alt="[Image of Terminal de Control de Acceso Biométrico o con Tarjeta]" class="mx-auto w-24 h-24 object-contain">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Control de Acceso Unificado</h3>
+                    <p class="text-gray-600 text-center">
+                        Sistemas biométricos (huella, facial), tarjetas y códigos QR integrados con porteros y elevadores. Gestión segura y eficiente del flujo de personas.
+                    </p>
+                </div>
+
+                <!-- Tarjeta de Solución: Gestión Centralizada (VMS) -->
+                <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                    <div class="mb-6 text-center">
+                        <img src="https://placehold.co/100x100/e0e0e0/333333?text=Plataforma+VMS" alt="[Image of Pantalla de Software VMS con Múltiples Vistas de Cámaras]" class="mx-auto w-24 h-24 object-contain">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Gestión Centralizada (VMS)</h3>
+                    <p class="text-gray-600 text-center">
+                        Software de gestión que unifica CCTV, acceso y alarmas en una interfaz. Monitoreo en tiempo real y control total desde un punto central.
+                    </p>
+                </div>
+
+                <!-- Tarjeta de Solución: Intercomunicación IP Avanzada -->
+                <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                    <div class="mb-6 text-center">
+                        <img src="https://placehold.co/100x100/e0e0e0/333333?text=Videoportero+IP" alt="[Image of Videoportero IP Moderno con Pantalla]" class="mx-auto w-24 h-24 object-contain">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Intercomunicación IP Avanzada</h3>
+                    <p class="text-gray-600 text-center">
+                        Videoporteros IP que permiten comunicación con smartphones, videollamadas y apertura remota. Máxima comodidad y control de acceso.
+                    </p>
+                </div>
+
+            </div>
+            <a href="#contacto" class="inline-block bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-green-700 transition duration-300 ease-in-out transform hover:scale-105 card-shadow mt-12">
+                Descubre Nuestras Soluciones Inteligentes
+            </a>
+        </div>
+    </section>
+
+    <!-- Nueva Sección: Soluciones Industriales y Grandes Espacios -->
+    <section id="soluciones-industriales" class="py-16 px-4 bg-gray-200 fade-in-section rounded-b-lg">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-green-700 mb-12">Soluciones Industriales de Alto Nivel</h2>
+            <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
+                Implementamos sistemas robustos para proteger fábricas, almacenes y grandes instalaciones, garantizando la seguridad y eficiencia operacional.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tarjeta de Solución: Protección Perimetral Avanzada -->
+                <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                    <div class="mb-6 text-center">
+                        <img src="https://placehold.co/100x100/e0e0e0/333333?text=Per%C3%ADmetro+Seguro" alt="[Image of Valla o Muro con Sensores de Detección]" class="mx-auto w-24 h-24 object-contain">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Protección Perimetral</h3>
+                    <p class="text-gray-600 text-center">
+                        Videovigilancia y alarmas inteligentes para detección temprana en perímetros extensos. Análisis de video y sensores de última generación.
+                    </p>
+                </div>
+
+                <!-- Tarjeta de Solución: Control de Acceso para Personal y Vehículos -->
+                <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                    <div class="mb-6 text-center">
+                        <img src="https://placehold.co/100x100/e0e0e0/333333?text=Acceso+Industrial" alt="[Image of Barrera de Acceso Vehicular con Lector de Tarjetas]" class="mx-auto w-24 h-24 object-contain">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Control de Acceso Integrado</h3>
+                    <p class="text-gray-600 text-center">
+                        Gestión centralizada de acceso para personal y vehículos. Reconocimiento facial y LPR para optimizar el flujo y la seguridad.
+                    </p>
+                </div>
+
+                <!-- Tarjeta de Solución: Monitoreo de Producción y Seguridad Operacional -->
+                <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                    <div class="mb-6 text-center">
+                        <img src="https://placehold.co/100x100/e0e0e0/333333?text=Monitoreo+F%C3%A1brica" alt="[Image of Monitor de Seguridad Industrial con Paneles de Cámaras]" class="mx-auto w-24 h-24 object-contain">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Monitoreo y Seguridad Operacional</h3>
+                    <p class="text-gray-600 text-center">
+                        Videovigilancia inteligente para supervisar la producción, detectar anomalías y garantizar la seguridad de los trabajadores.
+                    </p>
+                </div>
+
+                <!-- Tarjeta de Solución: Detección de Incendios Industrial -->
+                <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                    <div class="mb-6 text-center">
+                        <img src="https://placehold.co/100x100/e0e0e0/333333?text=Detector+Industrial" alt="[Image of Detector de Humo o Calor Industrial]" class="mx-auto w-24 h-24 object-contain">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Detección de Incendios Industrial</h3>
+                    <p class="text-gray-600 text-center">
+                        Soluciones avanzadas de detección de incendios adaptadas a entornos industriales. Sensores especializados para una respuesta rápida y efectiva.
+                    </p>
+                </div>
+
+            </div>
+            <a href="#contacto" class="inline-block bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-green-700 transition duration-300 ease-in-out transform hover:scale-105 card-shadow mt-12">
+                Consulta por Soluciones para tu Industria
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección: Nuestra Metodología de Trabajo -->
+    <section id="metodologia" class="py-16 px-4 bg-gray-100 fade-in-section">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-green-700 mb-12">Nuestro Proceso de Trabajo</h2>
+            <p class="text-lg text-gray-700 mb-12 max-w-3xl mx-auto">
+                En SecuraTech Solutions, garantizamos calidad y eficiencia en cada proyecto a través de un proceso claro y estructurado.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Paso 1: Análisis y Consultoría -->
+                <div class="step-card flex flex-col items-center">
+                    <div class="step-icon">🔍</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">1. Análisis y Consultoría</h3>
+                    <p class="text-gray-600 text-center">
+                        Comprendemos tus necesidades y riesgos para una solución de seguridad efectiva y personalizada.
+                    </p>
+                </div>
+
+                <!-- Paso 2: Diseño de Soluciones -->
+                <div class="step-card flex flex-col items-center">
+                    <div class="step-icon">💡</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">2. Diseño a Medida</h3>
+                    <p class="text-gray-600 text-center">
+                        Creamos el diseño ideal, seleccionando tecnologías y equipos que se adapten a tu entorno y presupuesto.
+                    </p>
+                </div>
+
+                <!-- Paso 3: Implementación Profesional -->
+                <div class="step-card flex flex-col items-center">
+                    <div class="step-icon">🛠️</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">3. Instalación Experta</h3>
+                    <p class="text-gray-600 text-center">
+                        Nuestro equipo calificado instala y configura el sistema con los más altos estándares de calidad.
+                    </p>
+                </div>
+
+                <!-- Paso 4: Pruebas y Soporte Continuo -->
+                <div class="step-card flex flex-col items-center">
+                    <div class="step-icon">✅</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">4. Soporte y Mantenimiento</h3>
+                    <p class="text-gray-600 text-center">
+                        Realizamos pruebas rigurosas y ofrecemos soporte continuo para una seguridad duradera.
+                    </p>
+                </div>
+            </div>
+            <a href="#contacto" class="inline-block bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-green-700 transition duration-300 ease-in-out transform hover:scale-105 card-shadow mt-12">
+                Inicia Tu Proyecto Hoy
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección de Marcas -->
+    <section id="marcas" class="bg-gray-200 py-16 px-4 rounded-b-lg fade-in-section">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-green-700 mb-12">Nuestras Marcas Asociadas</h2>
+            <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
+                Trabajamos con líderes de la industria para ofrecerte calidad y fiabilidad en cada instalación.
+            </p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-8 items-center justify-items-center">
+                <!-- [Image of Logo Hikvision] -->
+                <div class="flex items-center justify-center p-4 bg-white rounded-lg card-shadow brand-card">
+                    <img src="https://placehold.co/120x60/f0f0f0/333333?text=Hikvision" alt="Logo Hikvision" title="Hikvision" class="h-12 w-auto">
+                </div>
+                <!-- [Image of Logo Dahua] -->
+                <div class="flex items-center justify-center p-4 bg-white rounded-lg card-shadow brand-card">
+                    <img src="https://placehold.co/120x60/f0f0f0/333333?text=Dahua" alt="Logo Dahua" title="Dahua" class="h-12 w-auto">
+                </div>
+                <!-- [Image of Logo Alcatel] -->
+                <div class="flex items-center justify-center p-4 bg-white rounded-lg card-shadow brand-card">
+                    <img src="https://placehold.co/120x60/f0f0f0/333333?text=Alcatel" alt="Logo Alcatel" title="Alcatel" class="h-12 w-auto">
+                </div>
+                <!-- [Image of Logo Ubiquiti] -->
+                <div class="flex items-center justify-center p-4 bg-white rounded-lg card-shadow brand-card">
+                    <img src="https://placehold.co/120x60/f0f0f0/333333?text=Ubiquiti" alt="Logo Ubiquiti" title="Ubiquiti" class="h-12 w-auto">
+                </div>
+                <!-- [Image of Logo Bosch] -->
+                <div class="flex items-center justify-center p-4 bg-white rounded-lg card-shadow brand-card">
+                    <img src="https://placehold.co/120x60/f0f0f0/333333?text=Bosch" alt="Logo Bosch" title="Bosch" class="h-12 w-auto">
+                </div>
+                <!-- [Image of Logo Mikrotik] -->
+                <div class="flex items-center justify-center p-4 bg-white rounded-lg card-shadow brand-card">
+                    <img src="https://placehold.co/120x60/f0f0f0/333333?text=Mikrotik" alt="Logo Mikrotik" title="Mikrotik" class="h-12 w-auto">
+                </div>
+                <!-- [Image of Logo Furukawa] -->
+                <div class="flex items-center justify-center p-4 bg-white rounded-lg card-shadow brand-card">
+                    <img src="https://placehold.co/120x60/f0f0f0/333333?text=Furukawa" alt="Logo Furukawa" title="Furukawa" class="h-12 w-auto">
+                </div>
+            </div>
+        </section>
+
+    <!-- Sección de Productos Destacados -->
+    <section id="productos" class="py-16 px-4 bg-gray-100 fade-in-section">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-green-700 mb-12">Productos Clave para tu Seguridad</h2>
+            <p class="text-lg text-gray-700 mb-8 text-center max-w-3xl mx-auto">
+                Equipos de vanguardia de marcas líderes, garantizando la máxima seguridad y rendimiento en cada solución.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Categoría: Frentes de Portero -->
+                <div class="bg-white p-6 rounded-lg card-shadow product-card flex flex-col items-center text-center">
+                    <h3 class="text-2xl font-semibold text-green-700 mb-4">Frentes de Portero</h3>
+                    <div class="w-full mb-4">
+                        <!-- Placeholder para Frente de Portero -->
+                        <img src="https://placehold.co/200x150/e0e0e0/333333?text=Frente+Portero+Hikvision" alt="Frente de Portero IP Hikvision" class="w-full h-auto max-h-48 object-contain mb-2 rounded">
+                        <p class="text-gray-800 font-semibold">Modelo DS-KV8113-WME1 - Hikvision (Ejemplo)</p>
+                        <p class="text-gray-600 text-sm">Videoportero IP Full HD con visión nocturna y lector QR. Ideal para condominios y edificios modernos.</p>
+                    </div>
+                    <div class="w-full mt-4">
+                        <h4 class="text-xl font-semibold text-gray-900 mb-2">Video de Presentación del Producto</h4>
+                        <div class="video-responsive mb-2">
+                            <iframe src="https://www.youtube.com/embed/I29_WWuntxs" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p class="text-gray-800 font-semibold">Demostración de Portero IP</p>
+                        <p class="text-gray-600 text-sm">Vea las características y funcionalidades en acción.</p>
+                    </div>
+                    <a href="#contacto" class="inline-block bg-green-500 text-white py-2 px-6 rounded-md text-sm hover:bg-green-600 transition duration-300 mt-4">Solicitar Presupuesto</a>
+                </div>
+
+                <!-- Categoría: Detección de Incendio -->
+                <div class="bg-white p-6 rounded-lg card-shadow product-card flex flex-col items-center text-center">
+                    <h3 class="text-2xl font-semibold text-green-700 mb-4">Detección de Incendio</h3>
+                    <div class="w-full mb-4">
+                        <!-- Placeholder para Central de Alarma de Incendio Bosch -->
+                        <img src="https://placehold.co/200x150/e0e0e0/333333?text=Central+Incendio+Bosch" alt="Central de Alarma de Incendio Bosch" class="w-full h-auto max-h-48 object-contain mb-2 rounded">
+                        <p class="text-gray-800 font-semibold">Panel FPD-7024 - Bosch</p>
+                        <p class="text-gray-600 text-sm">Central de alarma de incendio direccionable, con monitoreo avanzado para detección temprana y respuesta eficaz.</p>
+                    </div>
+                    <div class="w-full">
+                        <!-- Placeholder para Detector de Humo Furukawa -->
+                        <img src="https://placehold.co/200x150/e0e0e0/333333?text=Sensor+Humo+Furukawa" alt="Sensor de Humo Furukawa" class="w-full h-auto max-h-48 object-contain mb-2 rounded">
+                        <p class="text-gray-800 font-semibold">Detector Fotoeléctrico - Furukawa</p>
+                        <p class="text-gray-600 text-sm">Detector de humo óptico de alta sensibilidad, diseñado para detección rápida y fiable de incendios incipientes.</p>
+                    </div>
+                    <a href="#contacto" class="inline-block bg-green-500 text-white py-2 px-6 rounded-md text-sm hover:bg-green-600 transition duration-300 mt-4">Solicitar Presupuesto</a>
+                </div>
+
+                <!-- Categoría: Control de Accesos -->
+                <div class="bg-white p-6 rounded-lg card-shadow product-card flex flex-col items-center text-center">
+                    <h3 class="text-2xl font-semibold text-green-700 mb-4">Control de Accesos</h3>
+                    <div class="w-full mb-4">
+                        <!-- Placeholder para Módulo de Acceso Hikvision -->
+                        <img src="https://placehold.co/200x150/e0e0e0/333333?text=M%C3%B3dulo+Acceso+Hikvision" alt="Módulo de Acceso con Teclado y Huella Hikvision" class="w-full h-auto max-h-48 object-contain mb-2 rounded">
+                        <p class="text-gray-800 font-semibold">Módulo de Acceso DS-KD9203-FE6 - Hikvision (Ejemplo)</p>
+                        <p class="text-gray-600 text-sm">Estación exterior con teclado y lector de huella digital, control de acceso robusto y seguro.</p>
+                    </div>
+                    <div class="w-full mb-4">
+                        <!-- Placeholder para Terminal de Reconocimiento Facial Hikvision -->
+                        <img src="https://placehold.co/200x150/e0e0e0/333333?text=Reconocimiento+Facial+Hikvision" alt="Terminal de Reconocimiento Facial y Huella Hikvision" class="w-full h-auto max-h-48 object-contain mb-2 rounded">
+                        <p class="text-gray-800 font-semibold">Terminal Facial DS-KD9613-E6 - Hikvision (Ejemplo)</p>
+                        <p class="text-gray-600 text-sm">Control de acceso avanzado con reconocimiento facial rápido y lector de huellas para gestión eficiente.</p>
+                    </div>
+                    <div class="w-full">
+                        <!-- Placeholder para Controlador de Acceso Bosch -->
+                        <img src="https://placehold.co/200x150/e0e0e0/333333?text=Control+Acceso+Bosch" alt="Control de Acceso Bosch" class="w-full h-auto max-h-48 object-contain mb-2 rounded">
+                        <p class="text-gray-800 font-semibold">Sistema de Acceso B Series - Bosch</p>
+                        <p class="text-gray-600 text-sm">Controlador de acceso modular y escalable para gestión centralizada de usuarios en entornos complejos.</p>
+                    </div>
+                    <a href="#contacto" class="inline-block bg-green-500 text-white py-2 px-6 rounded-md text-sm hover:bg-green-600 transition duration-300 mt-4">Solicitar Presupuesto</a>
+                </div>
+
+                <!-- Categoría: Racks y Cableado Estructurado -->
+                <div class="bg-white p-6 rounded-lg card-shadow product-card flex flex-col items-center text-center">
+                    <h3 class="text-2xl font-semibold text-green-700 mb-4">Racks y Cableado Estructurado</h3>
+                    <div class="w-full mb-4">
+                        <!-- Placeholder para Rack de Cableado Estructurado Furukawa -->
+                        <img src="https://placehold.co/200x150/e0e0e0/333333?text=Rack+Furukawa" alt="Rack de Cableado Estructurado Furukawa" class="w-full h-auto max-h-48 object-contain mb-2 rounded">
+                        <p class="text-gray-800 font-semibold">Rack Abierto de Servidor - Furukawa</p>
+                        <p class="text-gray-600 text-sm">Solución robusta para organizar y proteger equipos de red. Facilita ventilación y mantenimiento, optimizando el espacio.</p>
+                    </div>
+                    <div class="w-full">
+                        <!-- Placeholder para Switch Gestionable Mikrotik -->
+                        <img src="https://placehold.co/200x150/e0e0e0/333333?text=Switch+Mikrotik" alt="Switch Gestionable Mikrotik" class="w-full h-auto max-h-48 object-contain mb-2 rounded">
+                        <p class="text-gray-800 font-semibold">Switch Cloud Router - Mikrotik</p>
+                        <p class="text-gray-600 text-sm">Switch gestionable de alto rendimiento para conectividad de red optimizada y segura. Alta capacidad y control.</p>
+                    </div>
+                    <a href="#contacto" class="inline-block bg-green-500 text-white py-2 px-6 rounded-md text-sm hover:bg-green-600 transition duration-300 mt-4">Solicitar Presupuesto</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="proyectos" class="py-16 px-4 bg-gray-200 rounded-b-lg fade-in-section">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-green-700 mb-12">Proyectos Recientes de Éxito</h2>
+            <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
+                Explora nuestra experiencia a través de proyectos de seguridad implementados con éxito en diversos sectores.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Proyecto 1: Sistema Integral en Edificio Corporativo -->
+                <div class="bg-white p-6 rounded-lg card-shadow project-card">
+                    <img src="https://placehold.co/400x250/d0d0d0/555555?text=Oficina+Segura" alt="[Image of Sistema de seguridad integral en edificio corporativo]" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Seguridad Integral en Torre Empresarial</h3>
+                    <p class="text-gray-600 text-sm mb-2">Modernización con videovigilancia IP y reconocimiento facial. Control de acceso biométrico y porteros inteligentes. </p>
+                    <p class="text-gray-800 font-bold text-md">Categoría: Edificios Inteligentes | Ubicación: Córdoba Capital</p>
+                </div>
+                <!-- Proyecto 2: Seguridad Perimetral y CCTV en Centro Logístico -->
+                <div class="bg-white p-6 rounded-lg card-shadow project-card">
+                    <img src="https://placehold.co/400x250/d0d0d0/555555?text=Logistica+Protegida" alt="[Image of Cámaras CCTV y seguridad perimetral en centro logístico]" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Protección Avanzada para Centro Logístico</h3>
+                    <p class="text-gray-600 text-sm mb-2">Cámaras PTZ con seguimiento, barreras infrarrojas y alarmas perimetrales. Integración con monitoreo 24/7.</p>
+                    <p class="text-gray-800 font-bold text-md">Categoría: Seguridad Industrial | Ubicación: Parque Industrial, Río Segundo</p>
+                </div>
+                <!-- Proyecto 3: Renovación de Detección de Incendios en Hotel -->
+                <div class="bg-white p-6 rounded-lg card-shadow project-card">
+                    <img src="https://placehold.co/400x250/d0d0d0/555555?text=Hotel+Protegido" alt="[Image of Sensores de alarma de incendio instalados en un hotel]" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Detección de Incendios en Hotel Boutique</h3>
+                    <p class="text-gray-600 text-sm mb-2">Sistema direccionable con detectores de humo y calor. Conforme a normativas de seguridad hotelera.</p>
+                    <p class="text-gray-800 font-bold text-md">Categoría: Incendio | Ubicación: Villa Carlos Paz</p>
+                </div>
+                <!-- Proyecto 4: Control de Acceso y Cableado en Universidad -->
+                <div class="bg-white p-6 rounded-lg card-shadow project-card">
+                    <img src="https://placehold.co/400x250/d0d0d0/555555?text=Campus+Seguro" alt="[Image of Control de acceso con torniquetes en una universidad]" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Gestión de Acceso en Campus Universitario</h3>
+                    <p class="text-gray-600 text-sm mb-2">Torniquetes con lectores de tarjetas y fibra óptica. Optimización de flujo estudiantil y red.</p>
+                    <p class="text-gray-800 font-bold text-md">Categoría: Control Acceso / Redes | Ubicación: Ciudad Universitaria, Córdoba</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Casos de Éxito -->
+    <section id="casos-exito" class="py-16 px-4 bg-gray-100 fade-in-section">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-green-700 mb-12">Resultados que Hablan: Casos de Éxito</h2>
+            <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
+                Conoce cómo nuestras soluciones transformaron la seguridad de clientes, superando desafíos con resultados duraderos.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Caso de Éxito 1: Optimización de Seguridad en Fábrica de Alimentos -->
+                <div class="bg-white p-8 rounded-lg card-shadow case-study-card">
+                    <img src="https://placehold.co/600x350/e0e0e0/333333?text=Fabrica+Segura" alt="[Image of Sistema de seguridad instalado en una fábrica de alimentos]" class="w-full h-56 object-cover mb-6 rounded">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Eficiencia y Seguridad en "Alimentos del Centro S.A."</h3>
+                    <p class="text-gray-700 mb-4 text-left">
+                        **Desafío:** Cubrir extensas áreas de producción y almacenamiento, con control de acceso estricto y monitoreo de cadena de frío.
+                    </p>
+                    <p class="text-gray-700 mb-4 text-left">
+                        **Solución:** Videovigilancia Hikvision con cámaras térmicas, control de acceso biométrico y sensores de temperatura para frigoríficos. Actualización de cableado.
+                    </p>
+                    <p class="text-gray-700 mb-6 text-left">
+                        **Resultados:** 90% reducción de robos, total cumplimiento normativo, 20% mejora en eficiencia operativa. Aumento en seguridad y tranquilidad.
+                    </p>
+                    <a href="#" class="inline-block bg-green-500 text-white py-2 px-6 rounded-md text-sm hover:bg-green-600 transition duration-300">Leer Caso Completo</a>
+                </div>
+
+                <!-- Caso de Éxito 2: Renovación de Seguridad en Consorcio Residencial Premium -->
+                <div class="bg-white p-8 rounded-lg card-shadow case-study-card">
+                    <img src="https://placehold.co/600x350/e0e0e0/333333?text=Consorcio+Residencial+Premium" alt="[Image of Sistema de videoportero instalado en entrada de edificio premium]" class="w-full h-56 object-cover mb-6 rounded">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Innovación en Acceso para "Torres del Sol"</h3>
+                    <p class="text-gray-700 mb-4 text-left">
+                        **Desafío:** Actualizar porteros y mejorar seguridad sin comprometer estética, permitiendo gestión remota de visitas.
+                    </p>
+                    <p class="text-gray-700 mb-4 text-left">
+                        **Solución:** Videoporteros IP Hikvision con monitores táctiles y app móvil. Cámaras CCTV ocultas y control de acceso facial.
+                    </p>
+                    <p class="text-gray-700 mb-6 text-left">
+                        **Resultados:** 70% aumento en satisfacción residente, 40% reducción en llamadas a seguridad. Infraestructura inteligente valorada.
+                    </p>
+                    <a href="#" class="inline-block bg-green-500 text-white py-2 px-6 rounded-md text-sm hover:bg-green-600 transition duration-300">Leer Caso Completo</a>
+                </div>
+
+                <!-- Caso de Éxito 3: Seguridad y Monitoreo para Bodega Vitivinícola -->
+                <div class="bg-white p-8 rounded-lg card-shadow case-study-card">
+                    <img src="https://placehold.co/600x350/e0e0e0/333333?text=Bodega+Segura" alt="[Image of Cámaras de seguridad en área de almacenamiento de bodega]" class="w-full h-56 object-cover mb-6 rounded">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Protección del Patrimonio en "Viñedos del Valle"</h3>
+                    <p class="text-gray-700 mb-4 text-left">
+                        **Desafío:** Proteger extensos viñedos, almacenes de alto valor y controlar acceso de personal y camiones.
+                    </p>
+                    <p class="text-gray-700 mb-4 text-left">
+                        **Solución:** Cámaras térmicas para viñedos, HD en almacenes con detección anómala. Control acceso vehicular (LPR) y cableado robusto.
+                    </p>
+                    <p class="text-gray-700 mb-6 text-left">
+                        **Resultados:** Detección temprana de intrusiones, 100% reducción en robos, 30% mejora en eficiencia logística. Control remoto total.
+                    </p>
+                    <a href="#" class="inline-block bg-green-500 text-white py-2 px-6 rounded-md text-sm hover:bg-green-600 transition duration-300">Leer Caso Completo</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonios" class="bg-gray-200 py-16 px-4 fade-in-section">
+        <div class="container mx-auto text-center max-w-4xl">
+            <h2 class="text-4xl font-bold text-green-700 mb-12">Lo que Dicen Nuestros Clientes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonio 1 -->
+                <div class="bg-white p-8 rounded-lg card-shadow testimonial-card">
+                    <p class="text-gray-700 italic mb-4">
+                        "El servicio de SecuraTech Solutions fue impecable. Profesionales, eficientes y muy atentos a nuestras necesidades de seguridad."
+                    </p>
+                    <p class="font-semibold text-gray-900">- Ana López, Administradora de Consorcio</p>
+                </div>
+                <!-- Testimonio 2 -->
+                <div class="bg-white p-8 rounded-lg card-shadow testimonial-card">
+                    <p class="text-gray-700 italic mb-4">
+                        "La instalación de alarmas de incendio nos dio una tranquilidad inmensa. El equipo superó nuestras expectativas en todo momento."
+                    </p>
+                    <p class="font-semibold text-gray-900">- Javier Pérez, Gerente de Edificio</p>
+                </div>
+                <!-- Testimonio 3 -->
+                <div class="bg-white p-8 rounded-lg card-shadow testimonial-card">
+                    <p class="text-gray-700 italic mb-4">
+                        "La calidad de los equipos y la profesionalidad son de primera. Los recomiendo totalmente para cualquier proyecto de seguridad."
+                    </p>
+                    <p class="font-semibold text-gray-900">- María García, Propietaria</p>
+                </div>
+                <!-- Testimonio 4 -->
+                <div class="bg-white p-8 rounded-lg card-shadow testimonial-card">
+                    <p class="text-gray-700 italic mb-4">
+                        "Una empresa que entiende la seguridad integral. Desde el cableado hasta los porteros, todo funciona a la perfección. ¡Excelente trabajo!"
+                    </p>
+                    <p class="font-semibold text-gray-900">- Carlos Ruiz, Residente</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Preguntas Frecuentes -->
+    <section id="faq" class="py-16 px-4 bg-gray-100 fade-in-section">
+        <div class="container mx-auto max-w-3xl">
+            <h2 class="text-4xl font-bold text-center text-green-700 mb-12">Preguntas Frecuentes</h2>
+
+            <!-- FAQ Item 1 -->
+            <div class="bg-white p-6 rounded-lg card-shadow faq-item">
+                <button class="w-full text-left font-semibold text-gray-900 text-lg flex justify-between items-center" onclick="toggleAnswer('faq1')">
+                    ¿Qué servicios de seguridad ofrecen?
+                    <span id="icon-faq1" class="text-green-500 text-2xl">+</span>
+                </button>
+                <div id="faq1" class="mt-4 text-gray-600 hidden">
+                    Ofrecemos soluciones integrales: porteros, CCTV, alarmas de incendio, seguridad eléctrica, alarmas de intrusión y control de acceso.
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="bg-white p-6 rounded-lg card-shadow faq-item">
+                <button class="w-full text-left font-semibold text-gray-900 text-lg flex justify-between items-center" onclick="toggleAnswer('faq2')">
+                    ¿Trabajan con consorcios y edificios?
+                    <span id="icon-faq2" class="text-green-500 text-2xl">+</span>
+                </button>
+                <div id="faq2" class="mt-4 text-gray-600 hidden">
+                    Sí, somos especialistas en soluciones para consorcios, edificios residenciales, oficinas y propiedades comerciales, adaptándonos a cada necesidad.
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="bg-white p-6 rounded-lg card-shadow faq-item">
+                <button class="w-full text-left font-semibold text-gray-900 text-lg flex justify-between items-center" onclick="toggleAnswer('faq3')">
+                    ¿Qué marcas de equipos utilizan?
+                    <span id="icon-faq3" class="text-green-500 text-2xl">+</span>
+                </button>
+                <div id="faq3" class="mt-4 text-gray-600 hidden">
+                    Trabajamos con marcas líderes para garantizar calidad y fiabilidad: Hikvision, Dahua, Alcatel, Ubiquiti, Bosch, Mikrotik, Furukawa, entre otras.
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="bg-white p-6 rounded-lg card-shadow faq-item">
+                <button class="w-full text-left font-semibold text-gray-900 text-lg flex justify-between items-center" onclick="toggleAnswer('faq4')">
+                    ¿Ofrecen mantenimiento y soporte técnico?
+                    <span id="icon-faq4" class="text-green-500 text-2xl">+</span>
+                </button>
+                <div id="faq4" class="mt-4 text-gray-600 hidden">
+                    Sí, ofrecemos planes de mantenimiento preventivo y correctivo, con soporte técnico especializado para el óptimo funcionamiento 24/7.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sección de Blog y Noticias -->
+    <section id="blog" class="py-16 px-4 bg-gray-200 rounded-b-lg fade-in-section">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-green-700 mb-12">Blog y Noticias</h2>
+            <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
+                Mantente informado sobre tendencias en seguridad, consejos útiles y novedades de SecuraTech Solutions.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div class="bg-white p-6 rounded-lg card-shadow blog-card">
+                    <img src="https://placehold.co/400x250/e0e0e0/333333?text=Noticia+1" alt="Imagen de Noticia 1" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Tendencias en Videovigilancia Inteligente para 2025</h3>
+                    <p class="text-gray-600 text-sm mb-4">Explora las innovaciones en cámaras de seguridad con IA y análisis de video avanzado.</p>
+                    <a href="#" class="inline-block bg-green-500 text-white py-2 px-4 rounded-md text-sm hover:bg-green-600 transition duration-300">Leer más</a>
+                </div>
+                <!-- Blog Post 2 -->
+                <div class="bg-white p-6 rounded-lg card-shadow blog-card">
+                    <img src="https://placehold.co/400x250/e0e0e0/333333?text=Noticia+2" alt="Imagen de Noticia 2" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Guía Completa para Elegir un Sistema de Portero IP</h3>
+                    <p class="text-gray-600 text-sm mb-4">Descubre los factores clave a considerar antes de invertir en un nuevo portero para tu edificio.</p>
+                    <a href="#" class="inline-block bg-green-500 text-white py-2 px-4 rounded-md text-sm hover:bg-green-600 transition duration-300">Leer más</a>
+                </div>
+                <!-- Blog Post 3 -->
+                <div class="bg-white p-6 rounded-lg card-shadow blog-card">
+                    <img src="https://placehold.co/400x250/e0e0e0/333333?text=Noticia+3" alt="Imagen de Noticia 3" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">La Importancia del Mantenimiento en Sistemas de Seguridad</h3>
+                    <p class="text-gray-600 text-sm mb-4">Aprende por qué el mantenimiento regular es vital para la efectividad y longevidad de tus sistemas.</p>
+                    <a href="#" class="inline-block bg-green-500 text-white py-2 px-4 rounded-md text-sm hover:bg-green-600 transition duration-300">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Quiénes Somos -->
+    <section id="nosotros" class="bg-green-700 text-white py-16 px-4 rounded-t-lg fade-in-section">
+        <div class="container mx-auto text-center max-w-4xl">
+            <h2 class="text-4xl font-bold mb-8">Quiénes Somos: SecuraTech Solutions</h2>
+            <p class="text-lg mb-6">
+                **Líderes en seguridad electrónica en Córdoba.** Con años de experiencia, diseñamos, instalamos y mantenemos sistemas de vanguardia, garantizando tu tranquilidad.
+            </p>
+            <p class="text-lg mb-8">
+                Nuestra misión es crear entornos seguros y eficientes, adaptándonos a cada necesidad. Nos enorgullece nuestra atención al detalle, el compromiso con el cliente y la implementación de tecnologías avanzadas.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Nuestra Misión</h3>
+                    <p class="text-md text-gray-200">
+                        Proveer soluciones innovadoras y confiables que protejan eficazmente personas y bienes, mejorando la calidad de vida y operatividad.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Nuestra Visión</h3>
+                    <p class="text-md text-gray-200">
+                        Ser el referente en seguridad inteligente en Córdoba y la región, reconocidos por excelencia tecnológica y servicio al cliente.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Nuestros Valores</h3>
+                    <ul class="text-md text-gray-200 list-disc list-inside text-left mx-auto max-w-xs">
+                        <li>**Compromiso:** Con tu seguridad.</li>
+                        <li>**Innovación:** Siempre a la vanguardia.</li>
+                        <li>**Profesionalismo:** Equipo experto.</li>
+                        <li>**Integridad:** Ética y transparencia.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="py-16 px-4 bg-gray-100 fade-in-section">
+        <div class="container mx-auto text-center max-w-2xl">
+            <h2 class="text-4xl font-bold text-green-700 mb-8">Contáctanos Hoy</h2>
+            <p class="text-lg text-gray-700 mb-8">
+                ¿Listo para mejorar la seguridad? Completa el formulario o contáctanos directamente para una consulta sin compromiso.
+            </p>
+
+            <!-- Formulario de Contacto con Validación Frontend -->
+            <form id="contactForm" class="bg-white p-8 rounded-lg card-shadow" onsubmit="return validateForm()">
+                <div class="mb-6 text-left">
+                    <label for="nombre" class="block text-gray-700 text-sm font-bold mb-2">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Tu Nombre" required>
+                    <p id="error-nombre" class="error-message hidden">El nombre no puede estar vacío.</p>
+                </div>
+                <div class="mb-6 text-left">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="tu.email@ejemplo.com" required>
+                    <p id="error-email" class="error-message hidden">Por favor, introduce un correo electrónico válido.</p>
+                </div>
+                <div class="mb-6 text-left">
+                    <label for="telefono" class="block text-gray-700 text-sm font-bold mb-2">Teléfono (opcional):</label>
+                    <input type="tel" id="telefono" name="telefono" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Ej: +54 9 11 1234 5678">
+                </div>
+                <div class="mb-6 text-left">
+                    <label for="mensaje" class="block text-gray-700 text-sm font-bold mb-2">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Describe tus necesidades de seguridad..." required></textarea>
+                    <p id="error-mensaje" class="error-message hidden">El mensaje no puede estar vacío.</p>
+                </div>
+                <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out transform hover:scale-105 card-shadow">
+                    Enviar Mensaje
+                </button>
+            </form>
+
+            <div class="mt-10 text-gray-700">
+                <p class="mb-2">O contáctanos directamente:</p>
+                <p class="font-semibold">📧 Email: info@securatechs.com.ar</p>
+                <p class="font-semibold">📞 Teléfono: +54 9 11 1234 5678</p>
+                <p class="font-semibold">📍 Dirección: Calle Falsa 123, Ciudad, País</p>
+            </div>
+
+            <!-- Contenedor del Mapa de Google -->
+            <div class="google-map-container card-shadow">
+                <p class="text-gray-700 text-lg mb-4 text-center mt-4">Encuéntranos en el mapa:</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.006969566904!2d-64.18877562432857!3d-31.41706699313264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2f8c5b9b8b7%3A0x4c2b9a7f3e8b0a9!2sC%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses-419!2sar!4v1700000000000!5m2!1ses-419!2sar"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <p class="text-gray-600 text-sm mt-2 text-center">
+                    (Este es un mapa de ejemplo de Córdoba. Para mostrar tu ubicación exacta, por favor, reemplaza el código 'src' del iframe con el de tu negocio en Google Maps.)
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sección de Pie de Página (Footer) -->
+    <footer class="bg-gray-800 text-white py-8 px-4 rounded-t-lg">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2025 SecuraTech Solutions. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">Facebook</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">Instagram</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón de "Volver Arriba" -->
+    <button onclick="topFunction()" id="backToTopBtn" title="Volver arriba">⬆️</button>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/5491112345678" class="whatsapp-float" target="_blank" title="Envíanos un mensaje por WhatsApp">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24">
+            <path d="M12.04 2C7.35 2 3.57 5.79 3.57 10.48C3.57 12.07 4.05 13.59 4.88 14.93L3.02 21.07L9.21 19.2C10.49 19.95 11.99 20.37 13.53 20.37C18.22 20.37 22 16.59 22 11.9C22 7.21 18.22 2 13.53 2C12.04 2 12.04 2 12.04 2ZM17.15 15.54C16.92 15.93 16.51 15.99 16.27 15.75L13.78 13.72C13.54 13.48 13.16 13.43 12.91 13.68C12.44 14.15 11.83 14.49 11.2 14.49C10.57 14.49 9.96 14.15 9.49 13.68C9.25 13.43 8.87 13.48 8.63 13.72L6.14 15.75C5.9 15.99 5.49 15.93 5.26 15.54C5.03 15.15 5.09 14.74 5.33 14.5L7.82 12.47C8.06 12.23 8.11 11.85 7.87 11.6L5.38 9.57C5.14 9.33 5.2 8.92 5.43 8.53C5.66 8.14 6.07 8.08 6.31 8.32L8.8 10.35C9.04 10.59 9.42 10.64 9.67 10.39C10.14 9.92 10.75 9.58 11.38 9.58C12.01 9.58 12.62 9.92 13.09 10.39C13.33 10.64 13.71 10.59 13.96 10.35L16.45 8.32C16.69 8.08 17.1 8.14 17.33 8.53C17.56 8.92 17.51 9.33 17.27 9.57L14.78 11.6C14.54 11.85 14.49 12.23 14.73 12.47L17.22 14.5C17.46 14.74 17.51 15.15 17.15 15.54Z"/>
+        </svg>
+    </a>
+
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("backToTopBtn");
+
+        // When the user scrolls down 200px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            }); // For smooth scrolling
+        }
+
+        // JavaScript para la funcionalidad de acordeón de FAQ
+        function toggleAnswer(id) {
+            const answer = document.getElementById(id);
+            const icon = document.getElementById('icon-' + id);
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.textContent = '-'; // Cambia a menos
+            } else {
+                answer.classList.add('hidden');
+                icon.textContent = '+'; // Cambia a más
+            }
+        }
+
+        // JavaScript para la validación del formulario de contacto
+        function validateForm() {
+            let isValid = true;
+
+            // Get form elements
+            const nombre = document.getElementById('nombre');
+            const email = document.getElementById('email');
+            const mensaje = document.getElementById('mensaje');
+
+            // Get error message elements
+            const errorNombre = document.getElementById('error-nombre');
+            const errorEmail = document.getElementById('error-email');
+            const errorMensaje = document.getElementById('error-mensaje');
+
+            // Reset styles and messages
+            nombre.classList.remove('input-error');
+            email.classList.remove('input-error');
+            mensaje.classList.remove('input-error');
+            errorNombre.classList.add('hidden');
+            errorEmail.classList.add('hidden');
+            errorMensaje.classList.add('hidden');
+
+            // Validate Nombre
+            if (nombre.value.trim() === '') {
+                nombre.classList.add('input-error');
+                errorNombre.classList.remove('hidden');
+                isValid = false;
+            }
+
+            // Validate Email
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email.value.trim())) {
+                email.classList.add('input-error');
+                errorEmail.classList.remove('hidden');
+                isValid = false;
+            }
+
+            // Validate Mensaje
+            if (mensaje.value.trim() === '') {
+                mensaje.classList.add('input-error');
+                errorMensaje.classList.remove('hidden');
+                isValid = false;
+            }
+
+            if (!isValid) {
+                // If validation fails, scroll to the first error
+                const firstErrorElement = document.querySelector('.input-error');
+                if (firstErrorElement) {
+                    firstErrorElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            } else {
+                // If validation passes, you can display a success message (instead of alert)
+                // For a real website, you would send the form data to a backend here.
+                console.log("Formulario enviado con éxito (simulado)");
+                // You can add a custom modal message here if needed
+                // Example: displayCustomMessage('¡Gracias! Su mensaje ha sido enviado.');
+                alert('¡Gracias! Su mensaje ha sido enviado.'); // Using alert for immediate feedback in this environment
+                document.getElementById('contactForm').reset(); // Clear the form
+            }
+
+            return false; // Prevent actual form submission to a non-existent backend
+        }
+
+        // Intersection Observer para animaciones de entrada de sección
+        const sections = document.querySelectorAll('.fade-in-section');
+
+        const observerOptions = {
+            root: null, // viewport as the root
+            rootMargin: '0px',
+            threshold: 0.1 // 10% of the section must be visible
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target); // Stop observing once visible
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>
