@@ -43,7 +43,7 @@
         "latitude": -31.430125996917056,
         "longitude": -64.19418702362411
       },
-      "hasMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.419143891799!2d-64.19418702362411!3d-31.430125996917056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28bd70a3463%3A0x5ac5d73b7bcb88e9!2sObispo%20Trejo%201268%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1750200170818!5m2!1ses!2sar"
+      "hasMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.419143891799!2d-64.19418702362411!3d-31.43011985392576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28bd70a3463%3A0x5ac5d73b7bcb88e9!2sObispo%20Trejo%201268%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1718820171081!5m2!1ses!2sar"
       }, <!-- Reemplaza con tu URL de Google Maps -->
       "openingHoursSpecification": [
         {
@@ -243,10 +243,12 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 100%; /* Cubre todo el ancho */
-            height: 100%; /* Cubre todo el alto */
-            object-fit: cover; /* Asegura que la imagen cubra el área, recortando si es necesario */
-            opacity: 0.3; /* Opacidad ajustada, aumentada a 0.3 para mayor visibilidad en la depuración */
+            max-width: 70%; /* Reducir el tamaño máximo */
+            max-height: 70%; /* Reducir el tamaño máximo */
+            width: auto; /* Permite que el ancho se ajuste proporcionalmente */
+            height: auto; /* Permite que la altura se ajuste proporcionalmente */
+            object-fit: contain; /* Asegura que la imagen completa sea visible */
+            opacity: 0.2; /* Opacidad ajustada para que sea más sutil */
             z-index: 1; /* Encima de la superposición del video, debajo del contenido */
         }
         .hero-content {
@@ -291,16 +293,15 @@
 <body class="bg-gray-100 text-gray-800">
 
     <!-- Sección de Encabezado (Header) -->
-    <header class="header-bg-custom shadow-md py-4 md:py-10 px-4 rounded-b-lg">
+    <header class="header-bg-custom shadow-md py-6 md:py-8 px-4 rounded-b-lg">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <!-- Navegación Principal -->
             <nav class="w-full flex flex-col md:flex-row md:items-center md:justify-start"> <!-- Use flex para alinear logo y enlaces de navegación -->
-                <!-- Logotipo de SecuraTech Solutions - MOVIDO AQUÍ -->
-                <a href="#inicio" class="flex items-center min-h-20 w-auto md:mb-0 md:mr-8"> <!-- Enlace del logo con altura mínima -->
-                    <!-- Se ajusta la imagen para llenar la altura del contenedor con object-contain -->
-                    <img src="assets/logotipo securatech (2).png" alt="Logotipo SecuraTech Solutions" class="h-full w-auto object-contain">
+                <!-- Logotipo de SecuraTech Solutions -->
+                <a href="#inicio" class="flex items-center h-auto min-h-[7rem] md:min-h-[8rem] max-h-[10rem] w-auto"> <!-- Contenedor del logo con altura mínima y flexible -->
+                    <img src="assets/logotipo securatech (2).png" alt="Logotipo SecuraTech Solutions" class="h-full w-auto object-contain"> <!-- Logo llena la altura y mantiene proporción -->
                 </a>
-                <ul class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-8 text-lg">
+                <ul class="flex flex-wrap justify-center md:flex-nowrap md:justify-end space-x-4 md:space-x-6 text-sm md:text-lg">
                     <li><a href="#inicio" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Inicio</a></li>
                     <li><a href="#servicios" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Servicios</a></li>
                     <li><a href="#soluciones-inteligentes" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out">Soluciones Inteligentes</a></li>
@@ -1023,7 +1024,7 @@
             <div class="google-map-container card-shadow">
                 <p class="text-gray-700 text-lg mb-4 text-center mt-4">Encuéntranos en el mapa:</p>
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.419143891799!2d-64.19418702362411!3d-31.430125996917056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28bd70a3463%3A0x5ac5d73b7bcb88e9!2sObispo%20Trejo%201268%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1750200170818!5m2!1ses!2sar"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.419143891799!2d-64.19418702362411!3d-31.43011985392576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28bd70a3463%3A0x5ac5d73b7bcb88e9!2sObispo%20Trejo%201268%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1718820171081!5m2!1ses!2sar"
                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
                 <p class="text-gray-600 text-sm mt-2 text-center">
