@@ -143,11 +143,11 @@
         }
         /* Color de fondo del encabezado personalizado */
         .header-bg-custom {
-            background-color: #1a1a1a; /* Tono oscuro para que el logo resalte */
+            background-color: #ffffff; /* Fondo blanco para el header */
         }
         /* Ajuste de color de texto para elementos de navegación en header oscuro */
         .header-nav-link {
-            color: #d1d5db; /* Gris claro para contraste */
+            color: #1f2937; /* Gris oscuro para contraste en fondo blanco */
         }
         .header-nav-link:hover {
             color: #34d399; /* Verde claro al pasar el ratón */
@@ -295,7 +295,7 @@
 <body class="bg-white text-gray-800"> <!-- Cambiado a bg-white -->
 
     <!-- Sección de Encabezado (Header) -->
-    <header class="header-bg-custom shadow-md py-4 px-4 rounded-b-lg">
+    <header class="header-bg-custom shadow-md py-4 px-4"> <!-- Fondo blanco para el header, se eliminó rounded-b-lg -->
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <!-- Navegación Principal -->
             <nav class="w-full">
@@ -724,7 +724,7 @@
     </section>
 
     <!-- Sección de Proyectos -->
-    <section id="proyectos" class="py-16 px-4 bg-white rounded-b-lg fade-in-section"> <!-- Fondo blanco, se eliminó rounded-b-lg -->
+    <section id="proyectos" class="py-16 px-4 bg-white fade-in-section"> <!-- Fondo blanco -->
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold text-green-700 mb-12">Proyectos Recientes de Éxito</h2>
             <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
@@ -913,7 +913,7 @@
     </section>
 
     <!-- Sección de Blog y Noticias -->
-    <section id="blog" class="py-16 px-4 bg-white fade-in-section"> <!-- Fondo blanco, se eliminó rounded-b-lg -->
+    <section id="blog" class="py-16 px-4 bg-white fade-in-section"> <!-- Fondo blanco -->
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold text-green-700 mb-12">Blog y Noticias</h2>
             <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
