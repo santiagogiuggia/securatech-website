@@ -236,10 +236,25 @@
             background-color: rgba(0, 0, 0, 0.5); /* Oscurece el video para que el texto sea legible */
             z-index: 0;
         }
+        /* Estilos para el logotipo de fondo en la sección Hero */
+        .hero-background-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%; /* Ajusta el tamaño del logo */
+            height: 90%; /* Ajusta el tamaño del logo */
+            background-image: url('assets/logotipo-securatech.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain; /* Asegura que la imagen completa sea visible */
+            opacity: 0.08; /* Lo hace más sutil */
+            z-index: 1; /* Encima de la superposición del video, debajo del contenido */
+        }
         .hero-content {
-            position: relative;
-            z-index: 1;
-            padding: 1rem; /* Añadir padding para móviles */
+            position: relative; /* Necesita ser relativo para que el z-index funcione */
+            z-index: 2; /* Necesita ser más alto que el hero-background-logo */
+            padding: 1rem;
         }
 
         /* Estilos para el mapa de Google */
@@ -314,6 +329,8 @@
             Cargando video...
         </video>
         <div class="video-overlay"></div>
+        <!-- Nuevo div para el logotipo en el fondo con z-index y opacidad -->
+        <div class="hero-background-logo"></div>
         <div class="hero-content container mx-auto">
             <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
                 Seguridad Integral: Tu Tranquilidad, Nuestra Prioridad
