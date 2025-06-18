@@ -203,60 +203,34 @@
             height: 30px;
         }
 
-        /* Estilos para la sección Hero con video de fondo */
-        .hero-video-container {
+        /* Estilos para la sección Hero (ahora con fondo blanco y logo principal) */
+        .hero-container { /* Renombrado de hero-video-container */
             position: relative;
             width: 100%;
             height: 70vh; /* Altura de la sección Hero */
             overflow: hidden;
             display: flex;
+            flex-direction: column; /* Para alinear logo y texto verticalmente */
             align-items: center;
             justify-content: center;
-            color: white;
+            background-color: #ffffff; /* Fondo blanco para la sección Hero */
+            color: #1f2937; /* Color de texto oscuro para contraste */
             text-align: center;
-            /* Eliminamos los bordes redondeados inferiores para que el fondo se integre */
-            /* border-bottom-left-radius: 0.5rem; */
-            /* border-bottom-right-radius: 0.5rem; */
         }
-        .hero-video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
+        /* Estilos para el logotipo principal en la sección Hero */
+        .hero-main-logo {
+            max-width: 50%; /* Ajusta el tamaño según sea necesario */
             height: auto;
-            z-index: -1;
-            transform: translate(-50%, -50%);
-            background-size: cover;
-        }
-        .video-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Oscurece el video para que el texto sea legible */
-            z-index: 0;
-        }
-        /* Estilos para el logotipo de fondo en la sección Hero */
-        .hero-background-logo-img { /* Nueva clase para el img */
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            max-width: 80%; /* Ajuste de tamaño para mayor visibilidad */
-            max-height: 80%; /* Ajuste de tamaño para mayor visibilidad */
-            width: auto; /* Permite que el ancho se ajuste proporcionalmente */
-            height: auto; /* Permite que la altura se ajuste proporcionalmente */
-            object-fit: contain; /* Asegura que la imagen completa sea visible */
-            opacity: 0.2; /* Opacidad ajustada para que sea más sutil */
-            z-index: 1; /* Encima de la superposición del video, debajo del contenido */
+            margin-bottom: 2rem; /* Espacio debajo del logo */
         }
         .hero-content {
-            position: relative; /* Necesita ser relativo para que el z-index funcione */
-            z-index: 2; /* Necesita ser más alto que el hero-background-logo-img */
+            position: relative;
+            z-index: 2;
             padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         /* Estilos para el mapa de Google */
@@ -292,7 +266,7 @@
         }
     </style>
 </head>
-<body class="bg-white text-gray-800"> <!-- Cambiado a bg-white -->
+<body class="bg-white text-gray-800">
 
     <!-- Sección de Encabezado (Header) -->
     <header class="header-bg-custom shadow-md py-4 px-4"> <!-- Fondo blanco para el header, se eliminó rounded-b-lg -->
@@ -301,7 +275,7 @@
             <nav class="w-full">
                 <ul class="flex flex-col md:flex-row items-center md:items-stretch md:justify-end md:flex-nowrap space-y-3 md:space-y-0 text-lg">
                     <!-- Logotipo de SecuraTech Solutions como primer elemento de navegación -->
-                    <li class="h-auto w-auto max-h-20 md:mr-auto"> <!-- Logo más pequeño: max-h-20 -->
+                    <li class="h-auto w-auto max-h-28 md:mr-auto"> <!-- Logo más grande en la cabecera -->
                         <a href="#inicio" class="flex items-center h-full w-auto">
                             <img src="assets/logotipo-securatech-2.png" alt="Logotipo SecuraTech Solutions" class="h-full w-auto object-contain">
                         </a>
@@ -325,31 +299,24 @@
         </div>
     </header>
 
-    <!-- Sección Hero (Destacado Principal) con Video de Fondo -->
-    <section id="inicio" class="hero-video-container">
-        <video autoplay muted loop class="hero-video">
-            <!-- Video de ejemplo. Reemplaza con tu propio video mp4 o webm. -->
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-security-cameras-on-building-1087-large.mp4" type="video/mp4">
-            Cargando video...
-        </video>
-        <div class="video-overlay"></div>
-        <!-- IMAGEN del logotipo de fondo en la sección Hero -->
-        <img src="assets/logotipo-securatech-2.png" alt="Logotipo SecuraTech Solutions de fondo" class="hero-background-logo-img">
+    <!-- Sección Hero (Destacado Principal) con Logo y Fondo Blanco -->
+    <section id="inicio" class="hero-container"> <!-- Clase cambiada y fondo blanco -->
         <div class="hero-content container mx-auto">
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight"> <!-- Aumentado el tamaño del título -->
+            <img src="assets/logotipo-securatech-2.png" alt="Logotipo SecuraTech Solutions" class="hero-main-logo">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-gray-900"> <!-- Color de texto oscuro -->
                 Seguridad Integral: Tu Tranquilidad, Nuestra Prioridad
             </h1>
-            <p class="text-xl md:text-3xl mb-10 max-w-3xl mx-auto"> <!-- Aumentado el tamaño del párrafo -->
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto text-gray-700"> <!-- Color de texto oscuro -->
                 En SecuraTech Solutions, protegemos tu hogar, empresa e industria con sistemas de seguridad de vanguardia y servicio profesional en Córdoba.
             </p>
-            <a href="#contacto" class="inline-block bg-white text-green-700 font-bold py-4 px-10 rounded-full text-xl hover:bg-gray-200 transition duration-300 ease-in-out transform hover:scale-105 card-shadow"> <!-- Botón más grande -->
+            <a href="#contacto" class="inline-block bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-green-700 transition duration-300 ease-in-out transform hover:scale-105 card-shadow">
                 ¡Protege tu Espacio Hoy!
             </a>
         </div>
     </section>
 
     <!-- Sección de Servicios -->
-    <section id="servicios" class="py-16 px-4 fade-in-section bg-white"> <!-- Fondo blanco -->
+    <section id="servicios" class="py-16 px-4 fade-in-section bg-white">
         <div class="container mx-auto">
             <h2 class="text-4xl font-bold text-center text-green-700 mb-12">Nuestros Servicios Esenciales</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -425,7 +392,7 @@
     </section>
 
     <!-- Nueva Sección: Soluciones Inteligentes para Edificios -->
-    <section id="soluciones-inteligentes" class="py-16 px-4 bg-white fade-in-section"> <!-- Fondo blanco -->
+    <section id="soluciones-inteligentes" class="py-16 px-4 bg-white fade-in-section">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold text-green-700 mb-12">Soluciones Inteligentes para Tu Edificio</h2>
             <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
@@ -485,7 +452,7 @@
     </section>
 
     <!-- Nueva Sección: Soluciones Industriales y Grandes Espacios -->
-    <section id="soluciones-industriales" class="py-16 px-4 bg-white fade-in-section"> <!-- Fondo blanco, se eliminó rounded-b-lg -->
+    <section id="soluciones-industriales" class="py-16 px-4 bg-white fade-in-section">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold text-green-700 mb-12">Soluciones Industriales de Alto Nivel</h2>
             <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
@@ -545,7 +512,7 @@
     </section>
 
     <!-- Sección: Nuestra Metodología de Trabajo -->
-    <section id="metodologia" class="py-16 px-4 bg-white fade-in-section"> <!-- Fondo blanco -->
+    <section id="metodologia" class="py-16 px-4 bg-white fade-in-section">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold text-green-700 mb-12">Nuestro Proceso de Trabajo</h2>
             <p class="text-lg text-gray-700 mb-12 max-w-3xl mx-auto">
@@ -596,7 +563,7 @@
     </section>
 
     <!-- Sección de Marcas -->
-    <section id="marcas" class="bg-white py-16 px-4 fade-in-section"> <!-- Fondo blanco, se eliminó rounded-b-lg -->
+    <section id="marcas" class="bg-white py-16 px-4 fade-in-section">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold text-green-700 mb-12">Nuestras Marcas Asociadas</h2>
             <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
@@ -639,7 +606,7 @@
         </section>
 
     <!-- Sección de Productos Destacados -->
-    <section id="productos" class="py-16 px-4 bg-white fade-in-section"> <!-- Fondo blanco -->
+    <section id="productos" class="py-16 px-4 bg-white fade-in-section">
         <div class="container mx-auto">
             <h2 class="text-4xl font-bold text-center text-green-700 mb-12">Productos Clave para tu Seguridad</h2>
             <p class="text-lg text-gray-700 mb-8 text-center max-w-3xl mx-auto">
@@ -724,7 +691,7 @@
     </section>
 
     <!-- Sección de Proyectos -->
-    <section id="proyectos" class="py-16 px-4 bg-white fade-in-section"> <!-- Fondo blanco -->
+    <section id="proyectos" class="py-16 px-4 bg-white fade-in-section">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold text-green-700 mb-12">Proyectos Recientes de Éxito</h2>
             <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
@@ -764,7 +731,7 @@
     </section>
 
     <!-- Sección de Casos de Éxito -->
-    <section id="casos-exito" class="py-16 px-4 bg-white fade-in-section"> <!-- Fondo blanco -->
+    <section id="casos-exito" class="py-16 px-4 bg-white fade-in-section">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold text-green-700 mb-12">Resultados que Hablan: Casos de Éxito</h2>
             <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
@@ -824,7 +791,7 @@
     </section>
 
     <!-- Sección de Testimonios -->
-    <section id="testimonios" class="bg-white py-16 px-4 fade-in-section"> <!-- Fondo blanco -->
+    <section id="testimonios" class="bg-white py-16 px-4 fade-in-section">
         <div class="container mx-auto text-center max-w-4xl">
             <h2 class="text-4xl font-bold text-green-700 mb-12">Lo que Dicen Nuestros Clientes</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -861,7 +828,7 @@
     </section>
 
     <!-- Sección de Preguntas Frecuentes -->
-    <section id="faq" class="py-16 px-4 bg-white fade-in-section"> <!-- Fondo blanco -->
+    <section id="faq" class="py-16 px-4 bg-white fade-in-section">
         <div class="container mx-auto max-w-3xl">
             <h2 class="text-4xl font-bold text-center text-green-700 mb-12">Preguntas Frecuentes</h2>
 
@@ -906,6 +873,7 @@
                 </button>
                 <div id="faq4" class="mt-4 text-gray-600 hidden">
                     Sí, ofrecemos planes de mantenimiento preventivo y correctivo, con soporte técnico especializado para el óptimo funcionamiento 24/7.
+                </p>
                 </div>
             </div>
 
@@ -913,7 +881,7 @@
     </section>
 
     <!-- Sección de Blog y Noticias -->
-    <section id="blog" class="py-16 px-4 bg-white fade-in-section"> <!-- Fondo blanco -->
+    <section id="blog" class="py-16 px-4 bg-white fade-in-section">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold text-green-700 mb-12">Blog y Noticias</h2>
             <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
@@ -983,7 +951,7 @@
     </section>
 
     <!-- Sección de Contacto -->
-    <section id="contacto" class="py-16 px-4 bg-white fade-in-section"> <!-- Fondo blanco -->
+    <section id="contacto" class="py-16 px-4 bg-white fade-in-section">
         <div class="container mx-auto text-center max-w-2xl">
             <h2 class="text-4xl font-bold text-green-700 mb-8">Contáctanos Hoy</h2>
             <p class="text-lg text-gray-700 mb-8">
