@@ -846,116 +846,27 @@
 
 
     <script>
-        // Get the button
-        let mybutton = document.getElementById("backToTopBtn");
-
-        // When the user scrolls down 200px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            }); // For smooth scrolling
-        }
-
-        // JavaScript para la validación del formulario de contacto
-        function validateForm() {
-            let isValid = true;
-
-            // Get form elements
-            const nombre = document.getElementById('nombre');
-            const email = document.getElementById('email');
-            const mensaje = document.getElementById('mensaje');
-
-            // Get error message elements
-            const errorNombre = document.getElementById('error-nombre');
-            const errorEmail = document.getElementById('error-email');
-            const errorMensaje = document.getElementById('error-mensaje');
-
-            // Reset styles and messages
-            nombre.classList.remove('input-error');
-            email.classList.remove('input-error');
-            mensaje.classList.remove('input-error');
-            errorNombre.classList.add('hidden');
-            errorEmail.classList.add('hidden');
-            errorMensaje.classList.add('hidden');
-
-            // Validate Nombre
-            if (nombre.value.trim() === '') {
-                nombre.classList.add('input-error');
-                errorNombre.classList.remove('hidden');
-                isValid = false;
-            }
-
-            // Validate Email
-            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailPattern.test(email.value.trim())) {
-                email.classList.add('input-error');
-                errorEmail.classList.remove('hidden');
-                isValid = false;
-            }
-
-            // Validate Mensaje
-            if (mensaje.value.trim() === '') {
-                mensaje.classList.add('input-error');
-                errorMensaje.classList.remove('hidden');
-                isValid = false;
-            }
-
-            if (!isValid) {
-                // If validation fails, scroll to the first error
-                const firstErrorElement = document.querySelector('.input-error');
-                if (firstErrorElement) {
-                    firstErrorElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                }
-            } else {
-                // If validation passes, you can display a success message (instead of alert)
-                // For a real website, you would send the form data to a backend here.
-                console.log("Formulario enviado con éxito (simulado)");
-                // You can add a custom modal message here if needed
-                // Example: displayCustomMessage('¡Gracias! Su mensaje ha sido enviado.');
-                alert('¡Gracias! Su mensaje ha sido enviado.'); // Using alert for immediate feedback in this environment
-                document.getElementById('contactForm').reset(); // Clear the form
-            }
-
-            return false; // Prevent actual form submission to a non-existent backend
-        }
-
-        // Intersection Observer para animaciones de entrada de sección
-        const sections = document.querySelectorAll('.fade-in-section');
-
-        const observerOptions = {
-            root: null, // viewport as the root
-            rootMargin: '0px',
-            threshold: 0.1 // 10% of the section must be visible
-        };
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                    observer.unobserve(entry.target); // Stop observing once visible
-                }
-            });
-        }, observerOptions);
-
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    </script>
-    <script>
-        // Lógica del menú desplegable para móviles
         document.addEventListener('DOMContentLoaded', () => {
+            // Lógica del botón "Volver Arriba"
+            let mybutton = document.getElementById("backToTopBtn");
+            window.onscroll = function() { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            function topFunction() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+
+            // Lógica del menú desplegable para móviles
             const menuToggle = document.getElementById('menu-toggle');
             const menu = document.getElementById('menu');
 
@@ -965,6 +876,57 @@
                 });
             }
         });
+
+        // JavaScript para la validación del formulario de contacto
+        function validateForm() {
+            let isValid = true;
+            const nombre = document.getElementById('nombre');
+            const email = document.getElementById('email');
+            const mensaje = document.getElementById('mensaje');
+
+            // Reset styles and messages
+            nombre.classList.remove('input-error');
+            email.classList.remove('input-error');
+            mensaje.classList.remove('input-error');
+            document.getElementById('error-nombre').classList.add('hidden');
+            document.getElementById('error-email').classList.add('hidden');
+            document.getElementById('error-mensaje').classList.add('hidden');
+
+            // Validate Nombre
+            if (nombre.value.trim() === '') {
+                nombre.classList.add('input-error');
+                document.getElementById('error-nombre').classList.remove('hidden');
+                isValid = false;
+            }
+
+            // Validate Email
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email.value.trim())) {
+                email.classList.add('input-error');
+                document.getElementById('error-email').classList.remove('hidden');
+                isValid = false;
+            }
+
+            // Validate Mensaje
+            if (mensaje.value.trim() === '') {
+                mensaje.classList.add('input-error');
+                document.getElementById('error-mensaje').classList.remove('hidden');
+                isValid = false;
+            }
+
+            if (!isValid) {
+                const firstErrorElement = document.querySelector('.input-error');
+                if (firstErrorElement) {
+                    firstErrorElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            } else {
+                console.log("Formulario enviado con éxito (simulado)");
+                alert('¡Gracias! Su mensaje ha sido enviado.');
+                document.getElementById('contactForm').reset();
+            }
+
+            return false;
+        }
     </script>
 </body>
 </html>
