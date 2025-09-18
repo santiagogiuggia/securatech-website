@@ -144,8 +144,6 @@
         /* Color de fondo del encabezado personalizado */
         .header-bg-custom {
             background-color: #ffffff; /* Fondo blanco para el header */
-            position: relative; /* Agregado para que z-index funcione */
-            z-index: 50; /* Z-index alto para estar encima de todo */
         }
         /* Ajuste de color de texto para elementos de navegación en header oscuro */
         .header-nav-link {
@@ -275,17 +273,17 @@
 <body class="bg-white text-gray-800">
 
     <!-- Sección de Encabezado (Header) -->
-    <header class="header-bg-custom shadow-md py-4 md:py-10 px-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <!-- Logotipo de SecuraTech Solutions -->
-            <div class="h-auto max-h-24 md:mr-8 flex items-center">
-                <a href="#inicio" class="flex items-center h-full w-auto">
-                    <img src="assets/securatech.png" alt="Logotipo SecuraTech Solutions" class="h-full w-auto object-contain">
-                </a>
-            </div>
+    <header class="header-bg-custom shadow-md py-4 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <!-- Navegación Principal -->
-            <nav class="w-full md:w-auto">
-                <ul class="flex flex-wrap md:flex-nowrap justify-center md:justify-start items-center space-x-3 md:space-x-8 text-lg">
+            <nav class="w-full">
+                <ul class="flex flex-col md:flex-row items-center md:items-stretch md:justify-end md:flex-nowrap space-y-3 md:space-y-0 text-lg">
+                    <!-- Logotipo de SecuraTech Solutions como primer elemento de navegación -->
+                    <li class="h-auto w-auto max-h-24 md:mr-auto flex items-center"> <!-- Logo más grande en la cabecera, agregado items-center -->
+                        <a href="#inicio" class="flex items-center h-full w-auto">
+                            <img src="assets/securatech.png" alt="Logotipo SecuraTech Solutions" class="h-full w-auto object-contain">
+                        </a>
+                    </li>
                     <li><a href="#inicio" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Inicio</a></li>
                     <li><a href="#servicios" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Servicios</a></li>
                     <li><a href="#soluciones-inteligentes" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Soluciones Inteligentes</a></li>
