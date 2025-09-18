@@ -63,8 +63,8 @@
         "https://www.facebook.com/SecuraTechSolutions", <!-- Reemplaza con tus redes sociales -->
         "https://www.instagram.com/SecuraTechSolutions",
         "https://www.linkedin.com/company/SecuraTechSolutions"
-    }
       ]
+    }
     </script>
 
     <!-- Incluye Tailwind CSS CDN para un estilo moderno y responsivo -->
@@ -257,7 +257,7 @@
             padding: 2rem;
             border-radius: 0.75rem; /* rounded-xl */
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
             border-bottom: 4px solid #10B981; /* Borde inferior verde */
         }
         .step-card:hover {
@@ -273,17 +273,17 @@
 <body class="bg-white text-gray-800">
 
     <!-- Sección de Encabezado (Header) -->
-    <header class="header-bg-custom shadow-md py-4 px-4">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+    <header class="header-bg-custom shadow-md py-4 md:py-10 px-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logotipo de SecuraTech Solutions -->
+            <div class="h-auto max-h-24 md:mr-8 flex items-center">
+                <a href="#inicio" class="flex items-center h-full w-auto">
+                    <img src="assets/securatech.png" alt="Logotipo SecuraTech Solutions" class="h-full w-auto object-contain">
+                </a>
+            </div>
             <!-- Navegación Principal -->
-            <nav class="w-full">
-                <ul class="flex flex-col md:flex-row items-center md:items-stretch md:justify-end md:flex-nowrap space-y-3 md:space-y-0 text-lg">
-                    <!-- Logotipo de SecuraTech Solutions como primer elemento de navegación -->
-                    <li class="h-auto w-auto max-h-24 md:mr-auto flex items-center"> <!-- Logo más grande en la cabecera, agregado items-center -->
-                        <a href="#inicio" class="flex items-center h-full w-auto">
-                            <img src="assets/securatech.png" alt="Logotipo SecuraTech Solutions" class="h-full w-auto object-contain">
-                        </a>
-                    </li>
+            <nav class="w-full md:w-auto">
+                <ul class="flex flex-wrap md:flex-nowrap justify-center md:justify-start items-center space-x-3 md:space-x-8 text-lg">
                     <li><a href="#inicio" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Inicio</a></li>
                     <li><a href="#servicios" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Servicios</a></li>
                     <li><a href="#soluciones-inteligentes" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Soluciones Inteligentes</a></li>
@@ -302,7 +302,7 @@
     <!-- Sección Hero (Destacado Principal) con Logo y Fondo Blanco -->
     <section id="inicio" class="hero-container">
         <div class="hero-content container mx-auto">
-            <img src="assets/securatech.png" alt="Logotipo SecuraTech Solutions" class="hero-main-logo">
+            <img src="assets/logotipo securatech (2).png" alt="Logotipo SecuraTech Solutions" class="hero-main-logo">
             <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight text-gray-900 max-w-4xl mx-auto">
                 Seguridad Integral: Tu Tranquilidad, Nuestra Prioridad
             </h1>
@@ -656,7 +656,7 @@
                     <div class="w-full mb-4">
                         <img src="assets/hikcontroldeacceso.jpg" alt="Terminal de Reconocimiento Facial y Huella Hikvision" class="w-full h-auto max-h-48 object-contain mb-2 rounded">
                         <p class="text-gray-800 font-semibold">Estación Exterior Facial DS-KD9613-E6 - Hikvision</p>
-                        <p class="text-gray-600 text-sm">Estación modular de puerta con reconocimiento facial avanzado y funciones de videoportero.</p>
+                        <p class="text-gray-600 text-center">Estación modular de puerta con reconocimiento facial avanzado y funciones de videoportero.</p>
                     </div>
                     <div class="w-full">
                         <img src="assets/Bosch-Logo.png" alt="Control de Acceso Bosch" class="w-full h-auto max-h-48 object-contain mb-2 rounded">
