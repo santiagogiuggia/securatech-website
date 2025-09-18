@@ -300,7 +300,7 @@
     <!-- Sección Hero (Destacado Principal) con Logo y Fondo Blanco -->
     <section id="inicio" class="hero-container">
         <div class="hero-content container mx-auto">
-            <img src="assets/securatech.png" alt="Logotipo SecuraTech Solutions" class="hero-main-logo w-96">
+            <!-- Eliminar el segundo logo aquí -->
             <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight text-gray-900 max-w-4xl mx-auto">
                 Seguridad Integral: Tu Tranquilidad, Nuestra Prioridad
             </h1>
@@ -647,12 +647,12 @@
                 <div class="bg-white p-6 rounded-lg card-shadow product-card flex flex-col items-center text-center">
                     <h3 class="text-2xl font-semibold text-green-700 mb-4">Control de Accesos</h3>
                     <div class="w-full mb-4">
-                        <img src="assets/hikcontroldeacceso.jpg" alt="Módulo de Acceso con Teclado y Huella Hikvision" class="mx-auto w-24 h-24 object-contain">
+                        <img src="assets/hikcontroldeacceso.jpg" alt="Módulo de Acceso con Teclado y Huella Hikvision" class="w-full h-auto max-h-48 object-contain mb-2 rounded">
                         <p class="text-gray-800 font-semibold">Terminal Facial DS-K1T673DWX - Hikvision</p>
                         <p class="text-gray-600 text-sm">Terminal de reconocimiento facial con detección de fiebre, ideal para control de acceso sin contacto.</p>
                     </div>
                     <div class="w-full mb-4">
-                        <img src="assets/hikcontroldeacceso.jpg" alt="Terminal de Reconocimiento Facial y Huella Hikvision" class="mx-auto w-24 h-24 object-contain">
+                        <img src="assets/hikcontroldeacceso.jpg" alt="Terminal de Reconocimiento Facial y Huella Hikvision" class="w-full h-auto max-h-48 object-contain mb-2 rounded">
                         <p class="text-gray-800 font-semibold">Estación Exterior Facial DS-KD9613-E6 - Hikvision</p>
                         <p class="text-gray-600 text-sm">Estación modular de puerta con reconocimiento facial avanzado y funciones de videoportero.</p>
                     </div>
@@ -948,14 +948,6 @@
             observer.observe(section);
         });
     </script>
-    <script>
-        // Lógica del menú desplegable para móviles
-        const menuToggle = document.getElementById('menu-toggle');
-        const menu = document.getElementById('menu');
 
-        menuToggle.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-    </script>
 </body>
 </html>
