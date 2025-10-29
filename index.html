@@ -5,28 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SecuraTech Solutions: Soluciones de Seguridad Integral para Edificios en Córdoba</title>
 
-    <!-- Meta Tags para SEO Básico -->
     <meta name="description" content="SecuraTech Solutions: Instalación y mantenimiento de sistemas de seguridad electrónica avanzados en Córdoba, Argentina. Ofrecemos porteros, CCTV, alarmas de incendio, control de acceso y cableado estructurado para consorcios, edificios, empresas y entornos industriales.">
     <meta name="keywords" content="seguridad electrónica Córdoba, porteros eléctricos, CCTV Córdoba, alarmas incendio edificios, control de acceso, cableado estructurado, seguridad consorcios, empresas seguridad Argentina, SecuraTech Solutions, soluciones inteligentes, edificios inteligentes, seguridad industrial, fábricas, almacenes">
     <meta name="author" content="SecuraTech Solutions">
-    <meta name="robots" content="index, follow"> <!-- Indica a los motores de búsqueda que indexen y sigan los enlaces -->
-
-    <!-- Open Graph Tags para Redes Sociales -->
-    <meta property="og:title" content="SecuraTech Solutions: Seguridad Integral para Edificios y Empresas">
+    <meta name="robots" content="index, follow"> <meta property="og:title" content="SecuraTech Solutions: Seguridad Integral para Edificios y Empresas">
     <meta property="og:description" content="Encuentra las mejores soluciones de seguridad electrónica en Córdoba. Expertos en porteros, CCTV, alarmas y control de acceso.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.securatechs.com.ar/"> <!-- Reemplaza con tu URL real -->
-    <meta property="og:image" content="assets/securatech.png"> <!-- Ahora apunta al nuevo logo -->
-    <meta property="og:locale" content="es_AR">
+    <meta property="og:url" content="https://www.securatechs.com.ar/"> <meta property="og:image" content="assets/securatech.png"> <meta property="og:locale" content="es_AR">
 
-    <!-- Schema Markup (JSON-LD) para Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "SecuraTech Solutions",
-      "image": "assets/securatech.png", <!-- Ahora apunta al nuevo logo -->
-      "@id": "https://www.securatechs.com.ar/#organization",
+      "image": "assets/securatech.png", "@id": "https://www.securatechs.com.ar/#organization",
       "url": "https://www.securatechs.com.ar/",
       "telephone": "+54 9 351 7659654",
       "priceRange": "$$$",
@@ -43,8 +35,7 @@
         "latitude": -31.430125996917056,
         "longitude": -64.19418702362411
       },
-      "hasMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.419143891799!2d-64.19418702362411!3d-31.43011985392576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28bd70a3463%3A0x5ac5d73b7bcb88e9!2sObispo%20Trejo%201268%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1718820171081!5m2!1ses!2sar"
-      }, <!-- Reemplaza con tu URL de Google Maps -->
+      "hasMap": "URL_DE_TU_MAPA_AQUÍ", 
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
@@ -60,16 +51,13 @@
         }
       ],
       "sameAs": [
-        "https://www.facebook.com/SecuraTechSolutions", <!-- Reemplaza con tus redes sociales -->
-        "https://www.instagram.com/SecuraTechSolutions",
+        "https://www.facebook.com/SecuraTechSolutions", "https://www.instagram.com/SecuraTechSolutions",
         "https://www.linkedin.com/company/SecuraTechSolutions"
       ]
     }
     </script>
 
-    <!-- Incluye Tailwind CSS CDN para un estilo moderno y responsivo -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Configuración de la nueva fuente Poppins desde Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -272,26 +260,17 @@
 </head>
 <body class="bg-white text-gray-800">
 
-    <!-- Sección de Encabezado (Header) -->
-    <header class="header-bg-custom shadow-md py-4 px-4">
-        <div class="container mx-auto flex justify-between items-center relative">
-            <!-- Logotipo de SecuraTech Solutions -->
-            <div class="h-auto w-auto max-h-12 flex items-center">
+    <header class="header-bg-custom shadow-md py-4 md:py-10 px-4 sticky top-0 z-50"> <div class="container mx-auto flex justify-between items-center">
+            <div class="h-auto max-h-24 md:mr-8 flex items-center">
                 <a href="#inicio" class="flex items-center h-full w-auto">
-                    <img src="assets/securatech.png" alt="Logotipo SecuraTech Solutions" class="h-full w-auto object-contain">
-                </a>
+                    <img src="assets/securatech.png" alt="Logotipo SecuraTech Solutions" class="h-full w-auto object-contain"> </a>
             </div>
-            <!-- Botón de Menú para Móviles -->
-            <button id="menu-toggle" class="md:hidden text-gray-700 hover:text-green-500 focus:outline-none p-2 rounded-md">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
-            </button>
-            <!-- Navegación Principal -->
-            <nav id="menu" class="hidden md:block w-full md:w-auto mt-4 md:mt-0">
-                <ul class="flex flex-col md:flex-row items-center md:items-stretch md:justify-end md:flex-nowrap space-y-3 md:space-y-0 text-lg md:space-x-8">
+            <nav class="w-full md:w-auto">
+                <ul class="flex flex-wrap md:flex-nowrap justify-center md:justify-start items-center space-x-3 md:space-x-8 text-lg">
                     <li><a href="#inicio" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Inicio</a></li>
                     <li><a href="#servicios" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Servicios</a></li>
+                    <li><a href="#soluciones-inteligentes" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Soluciones Inteligentes</a></li>
+                    <li><a href="#soluciones-industriales" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Soluciones Industriales</a></li>
                     <li><a href="#metodologia" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Metodología</a></li>
                     <li><a href="#marcas" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Marcas</a></li>
                     <li><a href="#productos" class="header-nav-link hover:text-green-400 transition duration-300 ease-in-out md:px-2">Productos</a></li>
@@ -303,630 +282,495 @@
         </div>
     </header>
 
-    <!-- Sección Hero (Destacado Principal) con Logo y Fondo Blanco -->
-    <section id="inicio" class="hero-container">
-        <div class="hero-content container mx-auto">
-            <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight text-gray-900 max-w-4xl mx-auto">
-                Seguridad Integral: Tu Tranquilidad, Nuestra Prioridad
-            </h1>
-            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto text-gray-700">
-                En SecuraTech Solutions, protegemos tu hogar, empresa e industria con sistemas de seguridad de vanguardia y servicio profesional en Córdoba.
-            </p>
-            <a href="#contacto" class="inline-block bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-green-700 transition duration-300 ease-in-out transform hover:scale-105 card-shadow">
-                ¡Protege tu Espacio Hoy!
-            </a>
-        </div>
-    </section>
-
-    <!-- Sección de Servicios -->
-    <section id="servicios" class="py-16 px-4 fade-in-section bg-white">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-center text-green-700 mb-12">Nuestros Servicios Esenciales</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <!-- Tarjeta de Servicio: Porteros e Intercomunicadores -->
-                <div class="bg-white p-8 rounded-lg card-shadow service-card">
-                    <div class="text-5xl text-green-500 mb-6 text-center">
-                        📞
-                    </div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Porteros e Intercomunicadores</h3>
-                    <p class="text-gray-600 text-center">
-                        Sistemas IP para control de acceso inteligente. Comunicación fluida y gestión remota, maximizando la seguridad en tu edificio.
-                    </p>
-                </div>
-
-                <!-- Tarjeta de Servicio: Sistemas CCTV -->
-                <div class="bg-white p-8 rounded-lg card-shadow service-card">
-                    <div class="text-5xl text-green-500 mb-6 text-center">
-                        📹
-                    </div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">CCTV y Videovigilancia</h3>
-                    <p class="text-gray-600 text-center">
-                        Cámaras HD con IA y analíticas avanzadas para monitoreo 24/7. Detección proactiva de amenazas, visión clara día y noche.
-                    </p>
-                </div>
-
-                <!-- Tarjeta de Servicio: Alarmas de Incendio -->
-                <div class="bg-white p-8 rounded-lg card-shadow service-card">
-                    <div class="text-5xl text-green-500 mb-6 text-center">
-                        🔥
-                    </div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Alarmas de Incendio</h3>
-                    <p class="text-gray-600 text-center">
-                        Sistemas de detección temprana para proteger vidas y bienes. Alertas inmediatas y conectividad para una respuesta rápida en emergencias.
-                    </p>
-                </div>
-
-                <!-- Tarjeta de Servicio: Seguridad Eléctrica -->
-                <div class="bg-white p-8 rounded-lg card-shadow service-card">
-                    <div class="text-5xl text-green-500 mb-6 text-center">
-                        ⚡
-                    </div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Seguridad Eléctrica y Cableado</h3>
-                    <p class="text-gray-600 text-center">
-                        Instalaciones eléctricas certificadas y cableado estructurado. Garantizamos rendimiento óptimo, eficiencia y seguridad sin riesgos.
-                    </p>
-                </div>
-
-                <!-- Tarjeta de Servicio: Alarmas de Intrusión -->
-                <div class="bg-white p-8 rounded-lg card-shadow service-card">
-                    <div class="text-5xl text-green-500 mb-6 text-center">
-                        🚨
-                    </div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Alarmas de Intrusión</h3>
-                    <p class="text-gray-600 text-center">
-                        Sistemas anti-robo con sensores de movimiento y contacto, conectados a centrales de monitoreo. Protección inteligente 24/7.
-                    </p>
-                </div>
-
-                <!-- Tarjeta de Servicio: Control de Acceso -->
-                <div class="bg-white p-8 rounded-lg card-shadow service-card">
-                    <div class="text-5xl text-green-500 mb-6 text-center">
-                        🔑
-                    </div>
-                    <h3 class="2xl font-semibold text-gray-900 mb-4 text-center">Control de Acceso</h3>
-                    <p class="text-gray-600 text-center">
-                        Gestiona el acceso a áreas restringidas con tecnología biométrica, tarjetas o códigos. Seguridad sin fisuras y control total.
-                    </p>
-                </div>
-
+    <main>
+        <section id="inicio" class="hero-container">
+            <div class="hero-content container mx-auto">
+                <img src="assets/securatech.png" alt="Logotipo SecuraTech Solutions" class="hero-main-logo"> <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight text-gray-900 max-w-4xl mx-auto">
+                    Seguridad Integral: Tu Tranquilidad, Nuestra Prioridad
+                </h1>
+                <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto text-gray-700">
+                    En SecuraTech Solutions, protegemos tu hogar, empresa e industria con sistemas de seguridad de vanguardia y servicio profesional en Córdoba.
+                </p>
+                <a href="#contacto" class="inline-block bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-green-700 transition duration-300 ease-in-out transform hover:scale-105 card-shadow">
+                    ¡Protege tu Espacio Hoy!
+                </a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Nueva Sección: Soluciones Inteligentes para Edificios -->
-    <section id="soluciones-inteligentes" class="py-16 px-4 bg-white fade-in-section">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold text-green-700 mb-12">Soluciones Inteligentes para Tu Edificio</h2>
-            <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
-                Integramos tecnología de vanguardia para crear entornos seguros, eficientes y conectados, ideales para edificios residenciales y comerciales.
-            </p>
+        <section id="servicios" class="py-16 px-4 fade-in-section bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center text-green-700 mb-12">Nuestros Servicios Esenciales</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Tarjeta de Solución: Videovigilancia con IA -->
-                <div class="bg-white p-8 rounded-lg card-shadow service-card">
-                    <div class="mb-6 text-center">
-                        <img src="assets/Hikvision-Logo.jpg" alt="Cámara con Inteligencia Artificial y Detección" class="mx-auto w-24 h-24 object-contain">
+                    <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                        <div class="text-5xl text-green-500 mb-6 text-center">
+                            📞
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Porteros e Intercomunicadores</h3>
+                        <p class="text-gray-600 text-center">
+                            Sistemas IP para control de acceso inteligente. Comunicación fluida y gestión remota, maximizando la seguridad en tu edificio.
+                        </p>
                     </div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Videovigilancia con IA</h3>
-                    <p class="text-gray-600 text-center">
-                        Cámaras de alta resolución con análisis de video avanzado. Detección de intrusos y reconocimiento facial para una seguridad superior.
-                    </p>
-                </div>
 
-                <!-- Tarjeta de Solución: Control de Acceso Integrado -->
-                <div class="bg-white p-8 rounded-lg card-shadow service-card">
-                    <div class="mb-6 text-center">
-                        <img src="assets/hikcontroldeacceso.jpg" alt="Terminal de Control de Acceso Biométrico o con Tarjeta" class="mx-auto w-24 h-24 object-contain">
+                    <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                        <div class="text-5xl text-green-500 mb-6 text-center">
+                            📹
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">CCTV y Videovigilancia</h3>
+                        <p class="text-gray-600 text-center">
+                            Cámaras HD con IA y analíticas avanzadas para monitoreo 24/7. Detección proactiva de amenazas, visión clara día y noche.
+                        </p>
                     </div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Control de Acceso Unificado</h3>
-                    <p class="text-gray-600 text-center">
-                        Sistemas biométricos (huella, facial), tarjetas y códigos QR integrados con porteros y elevadores. Gestión segura y eficiente del flujo de personas.
-                    </p>
-                </div>
 
-                <!-- Tarjeta de Solución: Gestión Centralizada (VMS) -->
-                <div class="bg-white p-8 rounded-lg card-shadow service-card">
-                    <div class="mb-6 text-center">
-                        <img src="assets/securatech.png" alt="Pantalla de Software VMS con Múltiples Vistas de Cámaras" class="mx-auto w-24 h-24 object-contain">
+                    <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                        <div class="text-5xl text-green-500 mb-6 text-center">
+                            🔥
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Alarmas de Incendio</h3>
+                        <p class="text-gray-600 text-center">
+                            Sistemas de detección temprana para proteger vidas y bienes. Alertas inmediatas y conectividad para una respuesta rápida en emergencias.
+                        </p>
                     </div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Gestión Centralizada (VMS)</h3>
-                    <p class="text-gray-600 text-center">
-                        Software de gestión que unifica CCTV, acceso y alarmas en una interfaz. Monitoreo en tiempo real y control total desde un punto central.
-                    </p>
-                </div>
 
-                <!-- Tarjeta de Solución: Intercomunicación IP Avanzada -->
-                <div class="bg-white p-8 rounded-lg card-shadow service-card">
-                    <div class="mb-6 text-center">
-                        <img src="assets/hikportero.jpg" alt="Videoportero IP Moderno con Pantalla" class="mx-auto w-24 h-24 object-contain">
+                    <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                        <div class="text-5xl text-green-500 mb-6 text-center">
+                            ⚡
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Seguridad Eléctrica y Cableado</h3>
+                        <p class="text-gray-600 text-center">
+                            Instalaciones eléctricas certificadas y cableado estructurado. Garantizamos rendimiento óptimo, eficiencia y seguridad sin riesgos.
+                        </p>
                     </div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Intercomunicación IP Avanzada</h3>
-                    <p class="text-gray-600 text-center">
-                        Videoporteros IP que permiten comunicación con smartphones, videollamadas y apertura remota. Máxima comodidad y control de acceso.
-                    </p>
-                </div>
 
-            </div>
-            <a href="#contacto" class="inline-block bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-green-700 transition duration-300 ease-in-out transform hover:scale-105 card-shadow mt-12">
-                Descubre Nuestras Soluciones Inteligentes
-            </a>
-        </div>
-    </section>
-
-    <!-- Nueva Sección: Soluciones Industriales y Grandes Espacios -->
-    <section id="soluciones-industriales" class="py-16 px-4 bg-white fade-in-section">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold text-green-700 mb-12">Soluciones Industriales de Alto Nivel</h2>
-            <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
-                Implementamos sistemas robustos para proteger fábricas, almacenes y grandes instalaciones, garantizando la seguridad y eficiencia operacional.
-            </p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Tarjeta de Solución: Protección Perimetral Avanzada -->
-                <div class="bg-white p-8 rounded-lg card-shadow service-card">
-                    <div class="mb-6 text-center">
-                        <img src="assets/securatech.png" alt="Valla o Muro con Sensores de Detección para Perímetros" class="mx-auto w-24 h-24 object-contain">
+                    <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                        <div class="text-5xl text-green-500 mb-6 text-center">
+                            🚨
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Alarmas de Intrusión</h3>
+                        <p class="text-gray-600 text-center">
+                            Sistemas anti-robo con sensores de movimiento y contacto, conectados a centrales de monitoreo. Protección inteligente 24/7.
+                        </p>
                     </div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Protección Perimetral</h3>
-                    <p class="text-gray-600 text-center">
-                        Videovigilancia y alarmas inteligentes para detección temprana en perímetros extensos. Análisis de video y sensores de última generación.
-                    </p>
-                </div>
 
-                <!-- Tarjeta de Solución: Control de Acceso para Personal y Vehículos -->
-                <div class="bg-white p-8 rounded-lg card-shadow service-card">
-                    <div class="mb-6 text-center">
-                        <img src="assets/hikcontroldeacceso.jpg" alt="Barrera de Acceso Vehicular con Lector de Tarjetas" class="mx-auto w-24 h-24 object-contain">
+                    <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                        <div class="text-5xl text-green-500 mb-6 text-center">
+                            🔑
+                        </div>
+                        <h3 class="2xl font-semibold text-gray-900 mb-4 text-center">Control de Acceso</h3>
+                        <p class="text-gray-600 text-center">
+                            Gestiona el acceso a áreas restringidas con tecnología biométrica, tarjetas o códigos. Seguridad sin fisuras y control total.
+                        </p>
                     </div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Control de Acceso Integrado</h3>
-                    <p class="text-gray-600 text-center">
-                        Gestión centralizada de acceso para personal y vehículos. Reconocimiento facial y LPR para optimizar el flujo y la seguridad.
-                    </p>
-                </div>
 
-                <!-- Tarjeta de Solución: Monitoreo de Producción y Seguridad Operacional -->
-                <div class="bg-white p-8 rounded-lg card-shadow service-card">
-                    <div class="mb-6 text-center">
-                        <img src="assets/securatech.png" alt="Monitor de Seguridad Industrial con Paneles de Cámaras" class="mx-auto w-24 h-24 object-contain">
-                    </div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Monitoreo y Seguridad Operacional</h3>
-                    <p class="text-gray-600 text-center">
-                        Videovigilancia inteligente para supervisar la producción, detectar anomalías y garantizar la seguridad de los trabajadores.
-                    </p>
-                </div>
-
-                <!-- Tarjeta de Solución: Detección de Incendios Industrial -->
-                <div class="bg-white p-8 rounded-lg card-shadow service-card">
-                    <div class="mb-6 text-center">
-                        <img src="assets/Bosch-Logo.png" alt="Detector de Humo o Calor Industrial" class="mx-auto w-24 h-24 object-contain">
-                    </div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Detección de Incendios Industrial</h3>
-                    <p class="text-gray-600 text-center">
-                        Soluciones avanzadas de detección de incendios adaptadas a entornos industriales. Sensores especializados para una respuesta rápida y efectiva.
-                    </p>
-                </div>
-
-            </div>
-            <a href="#contacto" class="inline-block bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-green-700 transition duration-300 ease-in-out transform hover:scale-105 card-shadow mt-12">
-                Consulta por Soluciones para tu Industria
-            </a>
-        </div>
-    </section>
-
-    <!-- Sección: Nuestra Metodología de Trabajo -->
-    <section id="metodologia" class="py-16 px-4 bg-white fade-in-section">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold text-green-700 mb-12">Nuestro Proceso de Trabajo</h2>
-            <p class="text-lg text-gray-700 mb-12 max-w-3xl mx-auto">
-                En SecuraTech Solutions, garantizamos calidad y eficiencia en cada proyecto a través de un proceso claro y estructurado.
-            </p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Paso 1: Análisis y Consultoría -->
-                <div class="bg-white p-8 rounded-lg card-shadow step-card flex flex-col items-center">
-                    <div class="text-6xl text-green-500 mb-6">🔍</div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">1. Análisis y Consultoría</h3>
-                    <p class="text-gray-600 text-center">
-                        Comprendemos tus necesidades y riesgos para una solución de seguridad efectiva y personalizada.
-                    </p>
-                </div>
-
-                <!-- Paso 2: Diseño de Soluciones -->
-                <div class="bg-white p-8 rounded-lg card-shadow step-card flex flex-col items-center">
-                    <div class="text-6xl text-green-500 mb-6">💡</div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">2. Diseño a Medida</h3>
-                    <p class="text-gray-600 text-center">
-                        Creamos el diseño ideal, seleccionando tecnologías y equipos que se adapten a tu entorno y presupuesto.
-                    </p>
-                </div>
-
-                <!-- Paso 3: Implementación Profesional -->
-                <div class="bg-white p-8 rounded-lg card-shadow step-card flex flex-col items-center">
-                    <div class="text-6xl text-green-500 mb-6">🛠️</div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">3. Instalación Experta</h3>
-                    <p class="text-gray-600 text-center">
-                        Nuestro equipo calificado instala y configura el sistema con los más altos estándares de calidad.
-                    </p>
-                </div>
-
-                <!-- Paso 4: Pruebas y Soporte Continuo -->
-                <div class="bg-white p-8 rounded-lg card-shadow step-card flex flex-col items-center">
-                    <div class="text-6xl text-green-500 mb-6">✅</div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">4. Soporte y Mantenimiento</h3>
-                    <p class="text-gray-600 text-center">
-                        Realizamos pruebas rigurosas y ofrecemos soporte continuo para una seguridad duradera.
-                    </p>
-                </div>
-            </div>
-            <a href="#contacto" class="inline-block bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-green-700 transition duration-300 ease-in-out transform hover:scale-105 card-shadow mt-12">
-                Inicia Tu Proyecto Hoy
-            </a>
-        </div>
-    </section>
-
-    <!-- Sección de Marcas -->
-    <section id="marcas" class="bg-white py-16 px-4 fade-in-section">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold text-green-700 mb-12">Nuestras Marcas Asociadas</h2>
-            <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
-                Trabajamos con líderes de la industria para ofrecerte calidad y fiabilidad en cada instalación.
-            </p>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-8 items-center justify-items-center">
-                <!-- Logo Hikvision -->
-                <div class="flex items-center justify-center p-4 bg-white rounded-lg card-shadow brand-card">
-                    <img src="assets/Hikvision-Logo.jpg" alt="Logo Hikvision" title="Hikvision" class="h-12 w-auto">
-                </div>
-                <!-- Logo Dahua -->
-                <div class="flex items-center justify-center p-4 bg-white rounded-lg card-shadow brand-card">
-                    <img src="assets/logo dahua.jpg" alt="Logo Dahua" title="Dahua" class="h-12 w-auto">
-                </div>
-                <!-- Logo Alcatel -->
-                <div class="flex items-center justify-center p-4 bg-white rounded-lg card-shadow brand-card">
-                    <img src="assets/Alcatel-Lucent-Logo.png" alt="Logo Alcatel" title="Alcatel" class="h-12 w-auto">
-                </div>
-                <!-- Logo Ubiquiti -->
-                <div class="flex items-center justify-center p-4 bg-white rounded-lg card-shadow brand-card">
-                    <img src="assets/Ubiquiti_Networks-Logo.wine.svg" alt="Logo Ubiquiti" title="Ubiquiti" class="h-12 w-auto">
-                </div>
-                <!-- Logo Bosch -->
-                <div class="flex items-center justify-center p-4 bg-white rounded-lg card-shadow brand-card">
-                    <img src="assets/Bosch-Logo.png" alt="Logo Bosch" title="Bosch" class="h-12 w-auto">
-                </div>
-                <!-- Logo Mikrotik -->
-                <div class="flex items-center justify-center p-4 bg-white rounded-lg card-shadow brand-card">
-                    <img src="assets/logo-mikrotik.png" alt="Logo Mikrotik" title="Mikrotik" class="h-12 w-auto">
-                </div>
-                <!-- Logo Furukawa -->
-                <div class="flex items-center justify-center p-4 bg-white rounded-lg card-shadow brand-card">
-                    <img src="assets/Furukawa_Electric-Logo.wine.png" alt="Logo Furukawa" title="Furukawa" class="h-12 w-auto">
                 </div>
             </div>
         </section>
 
-    <!-- Sección de Productos Destacados -->
-    <section id="productos" class="py-16 px-4 bg-white fade-in-section">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-center text-green-700 mb-12">Productos Clave para tu Seguridad</h2>
-            <p class="text-lg text-gray-700 mb-8 text-center max-w-3xl mx-auto">
-                Equipos de vanguardia de marcas líderes, garantizando la máxima seguridad y rendimiento en cada solución.
-            </p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Categoría: Frentes de Portero -->
-                <div class="bg-white p-6 rounded-lg card-shadow product-card flex flex-col items-center text-center">
-                    <h3 class="text-2xl font-semibold text-green-700 mb-4">Frentes de Portero</h3>
-                    <div class="w-full mb-4">
-                        <img src="assets/hikportero.jpg" alt="Frente de Portero IP Hikvision" class="w-full h-auto max-h-48 object-contain mb-2 rounded">
-                        <p class="text-gray-800 font-semibold">Modelo DS-KM9503 - Hikvision</p>
-                        <p class="text-gray-600 text-sm">Estación maestra de videoportero con pantalla táctil, ideal para gestión centralizada en edificios.</p>
-                    </div>
-                    <div class="w-full mt-4">
-                        <h4 class="text-xl font-semibold text-gray-900 mb-2">Video de Presentación del Producto</h4>
-                        <div class="video-responsive mb-2">
-                            <iframe src="https://www.youtube.com/embed/I29_WWuntxs" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <p class="text-gray-800 font-semibold">Demostración de Portero IP</p>
-                        <p class="text-gray-600 text-sm">Vea las características y funcionalidades en acción.</p>
-                    </div>
-                    <a href="#contacto" class="inline-block bg-green-500 text-white py-2 px-6 rounded-md text-sm hover:bg-green-600 transition duration-300 mt-4">Solicitar Presupuesto</a>
-                </div>
-
-                <!-- Categoría: Detección de Incendio -->
-                <div class="bg-white p-6 rounded-lg card-shadow product-card flex flex-col items-center text-center">
-                    <h3 class="text-2xl font-semibold text-green-700 mb-4">Detección de Incendio</h3>
-                    <div class="w-full mb-4">
-                        <img src="assets/Bosch-Logo.png" alt="Central de Alarma de Incendio Bosch" class="w-full h-auto max-h-48 object-contain mb-2 rounded">
-                        <p class="text-gray-800 font-semibold">Panel FPD-7024 - Bosch</p>
-                        <p class="text-gray-600 text-sm">Central de alarma de incendio direccionable, con monitoreo avanzado para detección temprana y respuesta eficaz.</p>
-                    </div>
-                    <div class="w-full">
-                        <img src="assets/Furukawa_Electric-Logo.wine.png" alt="Sensor de Humo Furukawa" class="w-full h-auto max-h-48 object-contain mb-2 rounded">
-                        <p class="text-gray-800 font-semibold">Detector Fotoeléctrico - Furukawa</p>
-                        <p class="text-gray-600 text-sm">Detector de humo óptico de alta sensibilidad, diseñado para detección rápida y fiable de incendios incipientes.</p>
-                    </div>
-                    <a href="#contacto" class="inline-block bg-green-500 text-white py-2 px-6 rounded-md text-sm hover:bg-green-600 transition duration-300 mt-4">Solicitar Presupuesto</a>
-                </div>
-
-                <!-- Categoría: Control de Accesos -->
-                <div class="bg-white p-6 rounded-lg card-shadow product-card flex flex-col items-center text-center">
-                    <h3 class="text-2xl font-semibold text-green-700 mb-4">Control de Accesos</h3>
-                    <div class="w-full mb-4">
-                        <img src="assets/hikcontroldeacceso.jpg" alt="Módulo de Acceso con Teclado y Huella Hikvision" class="w-full h-auto max-h-48 object-contain mb-2 rounded">
-                        <p class="text-gray-800 font-semibold">Terminal Facial DS-K1T673DWX - Hikvision</p>
-                        <p class="text-gray-600 text-sm">Terminal de reconocimiento facial con detección de fiebre, ideal para control de acceso sin contacto.</p>
-                    </div>
-                    <div class="w-full mb-4">
-                        <img src="assets/hikcontroldeacceso.jpg" alt="Terminal de Reconocimiento Facial y Huella Hikvision" class="w-full h-auto max-h-48 object-contain mb-2 rounded">
-                        <p class="text-gray-800 font-semibold">Estación Exterior Facial DS-KD9613-E6 - Hikvision</p>
-                        <p class="text-gray-600 text-sm">Estación modular de puerta con reconocimiento facial avanzado y funciones de videoportero.</p>
-                    </div>
-                    <div class="w-full">
-                        <img src="assets/Bosch-Logo.png" alt="Control de Acceso Bosch" class="w-full h-auto max-h-48 object-contain mb-2 rounded">
-                        <p class="text-gray-800 font-semibold">Sistema de Acceso B Series - Bosch</p>
-                        <p class="text-gray-600 text-sm">Controlador de acceso modular y escalable para gestión centralizada de usuarios en entornos complejos.</p>
-                    </div>
-                    <a href="#contacto" class="inline-block bg-green-500 text-white py-2 px-6 rounded-md text-sm hover:bg-green-600 transition duration-300 mt-4">Solicitar Presupuesto</a>
-                </div>
-
-                <!-- Categoría: Racks y Cableado Estructurado -->
-                <div class="bg-white p-6 rounded-lg card-shadow product-card flex flex-col items-center text-center">
-                    <h3 class="text-2xl font-semibold text-green-700 mb-4">Racks y Cableado Estructurado</h3>
-                    <div class="w-full mb-4">
-                        <img src="assets/Furukawa_Electric-Logo.wine.png" alt="Rack de Cableado Estructurado Furukawa" class="w-full h-auto max-h-48 object-contain mb-2 rounded">
-                        <p class="text-gray-800 font-semibold">Rack Abierto de Servidor - Furukawa</p>
-                        <p class="text-gray-600 text-sm">Solución robusta para organizar y proteger equipos de red. Facilita ventilación y mantenimiento, optimizando el espacio.</p>
-                    </div>
-                    <div class="w-full">
-                        <img src="assets/logo-mikrotik.png" alt="Switch Gestionable Mikrotik" class="w-full h-auto max-h-48 object-contain mb-2 rounded">
-                        <p class="text-gray-800 font-semibold">Switch Cloud Router - Mikrotik</p>
-                        <p class="text-gray-600 text-sm">Switch gestionable de alto rendimiento para conectividad de red optimizada y segura. Alta capacidad y control.</p>
-                    </div>
-                    <a href="#contacto" class="inline-block bg-green-500 text-white py-2 px-6 rounded-md text-sm hover:bg-green-600 transition duration-300 mt-4">Solicitar Presupuesto</a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Proyectos -->
-    <section id="proyectos" class="py-16 px-4 bg-white fade-in-section">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold text-green-700 mb-12">Proyectos Recientes de Éxito</h2>
-            <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
-                Explora nuestra experiencia a través de proyectos de seguridad implementados con éxito en diversos sectores.
-            </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Proyecto 1: Sistema Integral en Edificio Corporativo -->
-                <div class="bg-white p-6 rounded-lg card-shadow project-card">
-                    <img src="assets/securatech1.jpg" alt="Sistema de seguridad integral en edificio corporativo" class="w-full h-48 object-cover mb-4 rounded">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Seguridad Integral en Torre Empresarial</h3>
-                    <p class="text-gray-600 text-sm mb-2">Modernización con videovigilancia IP y reconocimiento facial. Control de acceso biométrico y porteros inteligentes. </p>
-                    <p class="text-gray-800 font-bold text-md">Categoría: Edificios Inteligentes | Ubicación: Córdoba Capital</p>
-                </div>
-                <!-- Proyecto 2: Seguridad Perimetral y CCTV en Centro Logístico -->
-                <div class="bg-white p-6 rounded-lg card-shadow project-card">
-                    <img src="assets/securatech1.jpg" alt="Cámaras CCTV y seguridad perimetral en centro logístico" class="w-full h-48 object-cover mb-4 rounded">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Protección Avanzada para Centro Logístico</h3>
-                    <p class="text-gray-600 text-center text-sm mb-2">Cámaras PTZ con seguimiento, barreras infrarrojas y alarmas perimetrales. Integración con monitoreo 24/7.</p>
-                    <p class="text-gray-800 font-bold text-md">Categoría: Seguridad Industrial | Ubicación: Parque Industrial, Río Segundo</p>
-                </div>
-                <!-- Proyecto 3: Renovación de Detección de Incendios en Hotel -->
-                <div class="bg-white p-6 rounded-lg card-shadow project-card">
-                    <img src="assets/securatech1.jpg" alt="Sensores de alarma de incendio instalados en un hotel" class="w-full h-48 object-cover mb-4 rounded">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Detección de Incendios en Hotel Boutique</h3>
-                    <p class="text-gray-600 text-sm mb-2">Sistema direccionable con detectores de humo y calor. Conforme a normativas de seguridad hotelera.</p>
-                    <p class="text-gray-800 font-bold text-md">Categoría: Incendio | Ubicación: Villa Carlos Paz</p>
-                </div>
-                <!-- Proyecto 4: Control de Acceso y Cableado en Universidad -->
-                <div class="bg-white p-6 rounded-lg card-shadow project-card">
-                    <img src="assets/securatech1.jpg" alt="Control de acceso con torniquetes en una universidad" class="w-full h-48 object-cover mb-4 rounded">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Gestión de Acceso en Campus Universitario</h3>
-                    <p class="text-gray-600 text-sm mb-2">Torniquetes con lectores de tarjetas y fibra óptica. Optimización de flujo estudiantil y red.</p>
-                    <p class="text-gray-800 font-bold text-md">Categoría: Control Acceso / Redes | Ubicación: Ciudad Universitaria, Córdoba</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Quiénes Somos -->
-    <section id="nosotros" class="bg-green-700 text-white py-16 px-4 rounded-t-lg fade-in-section">
-        <div class="container mx-auto text-center max-w-4xl">
-            <h2 class="text-4xl font-bold mb-8">Quiénes Somos: SecuraTech Solutions</h2>
-            <p class="text-lg mb-6">
-                **Líderes en seguridad electrónica en Córdoba.** Con años de experiencia, diseñamos, instalamos y mantenemos sistemas de vanguardia, garantizando tu tranquilidad.
-            </p>
-            <p class="text-lg mb-8">
-                Nuestra misión es crear entornos seguros y eficientes, adaptándonos a cada necesidad. Nos enorgullece nuestra atención al detalle, el compromiso con el cliente y la implementación de tecnologías avanzadas.
-            </p>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-                <div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Nuestra Misión</h3>
-                    <p class="text-md text-gray-200">
-                        Proveer soluciones innovadoras y confiables que protejan eficazmente personas y bienes, mejorando la calidad de vida y operatividad.
-                    </p>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Nuestra Visión</h3>
-                    <p class="text-md text-gray-200">
-                        Ser el referente en seguridad inteligente en Córdoba y la región, reconocidos por excelencia tecnológica y servicio al cliente.
-                    </p>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Nuestros Valores</h3>
-                    <ul class="text-md text-gray-200 list-disc list-inside text-left mx-auto max-w-xs">
-                        <li>**Compromiso:** Con tu seguridad.</li>
-                        <li>**Innovación:** Siempre a la vanguardia.</li>
-                        <li>**Profesionalismo:** Equipo experto.</li>
-                        <li>**Integridad:** Ética y transparencia.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Contacto -->
-    <section id="contacto" class="py-16 px-4 bg-white fade-in-section">
-        <div class="container mx-auto text-center max-w-2xl">
-            <h2 class="text-4xl font-bold text-green-700 mb-8">Contáctanos Hoy</h2>
-            <p class="text-lg text-gray-700 mb-8">
-                ¿Listo para mejorar la seguridad? Completa el formulario o contáctanos directamente para una consulta sin compromiso.
-            </p>
-
-            <!-- Formulario de Contacto con Validación Frontend -->
-            <form id="contactForm" class="bg-white p-8 rounded-lg card-shadow" onsubmit="return validateForm()">
-                <div class="mb-6 text-left">
-                    <label for="nombre" class="block text-gray-700 text-sm font-bold mb-2">Nombre Completo:</label>
-                    <input type="text" id="nombre" name="nombre" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Tu Nombre" required>
-                    <p id="error-nombre" class="error-message hidden">El nombre no puede estar vacío.</p>
-                </div>
-                <div class="mb-6 text-left">
-                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="tu.email@ejemplo.com" required>
-                    <p id="error-email" class="error-message hidden">Por favor, introduce un correo electrónico válido.</p>
-                </div>
-                <div class="mb-6 text-left">
-                    <label for="telefono" class="block text-gray-700 text-sm font-bold mb-2">Teléfono (opcional):</label>
-                    <input type="tel" id="telefono" name="telefono" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Ej: +54 9 351 7659654">
-                </div>
-                <div class="mb-6 text-left">
-                    <label for="mensaje" class="block text-gray-700 text-sm font-bold mb-2">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Describe tus necesidades de seguridad..." required></textarea>
-                    <p id="error-mensaje" class="error-message hidden">El mensaje no puede estar vacío.</p>
-                </div>
-                <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out transform hover:scale-105 card-shadow">
-                    Enviar Mensaje
-                </button>
-            </form>
-
-            <div class="mt-10 text-gray-700">
-                <p class="mb-2">O contáctanos directamente:</p>
-                <p class="font-semibold">📧 Email: ventas@securatech.com.ar</p>
-                <p class="font-semibold">📞 Teléfono: +54 9 351 7659654</p>
-                <p class="font-semibold">📍 Dirección: Obispo Trejo 1268, Córdoba, Argentina</p>
-            </div>
-
-            <!-- Contenedor del Mapa de Google -->
-            <div class="google-map-container card-shadow">
-                <p class="text-gray-700 text-lg mb-4 text-center mt-4">Encuéntranos en el mapa:</p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.419143891799!2d-64.19418702362411!3d-31.43011985392576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28bd70a3463%3A0x5ac5d73b7bcb88e9!2sObispo%20Trejo%201268%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1718820171081!5m2!1ses!2sar"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-                <p class="text-gray-600 text-sm mt-2 text-center">
-                    (Este es un mapa de ejemplo de Córdoba. Para mostrar tu ubicación exacta, por favor, reemplaza el código 'src' del iframe con el de tu negocio en Google Maps.)
+        <section id="soluciones-inteligentes" class="py-16 px-4 bg-white fade-in-section">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold text-green-700 mb-12">Soluciones Inteligentes para Tu Edificio</h2>
+                <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
+                    Integramos tecnología de vanguardia para crear entornos seguros, eficientes y conectados, ideales para edificios residenciales y comerciales.
                 </p>
-            </div>
 
-        </div>
-    </section>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                        <div class="mb-6 text-center">
+                            <img src="assets/Hikvision-Logo.jpg" alt="Cámara con Inteligencia Artificial y Detección" class="mx-auto w-24 h-24 object-contain"> </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Videovigilancia con IA</h3>
+                        <p class="text-gray-600 text-center">
+                            Cámaras de alta resolución con análisis de video avanzado. Detección de intrusos y reconocimiento facial para una seguridad superior.
+                        </p>
+                    </div>
 
-    <!-- Sección de Pie de Página (Footer) -->
-    <footer class="bg-gray-800 text-white py-8 px-4 rounded-t-lg">
-        <div class="container mx-auto text-center text-sm">
-            <p>&copy; 2025 SecuraTech Solutions. Todos los derechos reservados.</p>
-            <div class="flex justify-center space-x-6 mt-4">
-                <a href="#" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">Facebook</a>
-                <a href="#" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">Instagram</a>
-                <a href="#" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">LinkedIn</a>
+                    <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                        <div class="mb-6 text-center">
+                            <img src="assets/hikcontroldeacceso.jpg" alt="Terminal de Control de Acceso Biométrico o con Tarjeta" class="mx-auto w-24 h-24 object-contain"> </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Control de Acceso Unificado</h3>
+                        <p class="text-gray-600 text-center">
+                            Sistemas biométricos (huella, facial), tarjetas y códigos QR integrados con porteros y elevadores. Gestión segura y eficiente del flujo de personas.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                        <div class="mb-6 text-center">
+                            <img src="assets/securatech.png" alt="Pantalla de Software VMS con Múltiples Vistas de Cámaras" class="mx-auto w-24 h-24 object-contain"> </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Gestión Centralizada (VMS)</h3>
+                        <p class="text-gray-600 text-center">
+                            Software de gestión que unifica CCTV, acceso y alarmas en una interfaz. Monitoreo en tiempo real y control total desde un punto central.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                        <div class="mb-6 text-center">
+                            <img src="assets/hikportero.jpg" alt="Videoportero IP Moderno con Pantalla" class="mx-auto w-24 h-24 object-contain"> </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Intercomunicación IP Avanzada</h3>
+                        <p class="text-gray-600 text-center">
+                            Videoporteros IP que permiten comunicación con smartphones, videollamadas y apertura remota. Máxima comodidad y control de acceso.
+                        </p>
+                    </div>
+
+                </div>
+                <a href="#contacto" class="inline-block bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-green-700 transition duration-300 ease-in-out transform hover:scale-105 card-shadow mt-12">
+                    Descubre Nuestras Soluciones Inteligentes
+                </a>
             </div>
+        </section>
+
+        <section id="soluciones-industriales" class="py-16 px-4 bg-white fade-in-section">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold text-green-700 mb-12">Soluciones Industriales de Alto Nivel</h2>
+                <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
+                    Implementamos sistemas robustos para proteger fábricas, almacenes y grandes instalaciones, garantizando la seguridad y eficiencia operacional.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                        <div class="mb-6 text-center">
+                            <img src="assets/securatech.png" alt="Valla o Muro con Sensores de Detección para Perímetros" class="mx-auto w-24 h-24 object-contain"> </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Protección Perimetral</h3>
+                        <p class="text-gray-600 text-center">
+                            Videovigilancia y alarmas inteligentes para detección temprana en perímetros extensos. Análisis de video y sensores de última generación.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                        <div class="mb-6 text-center">
+                            <img src="assets/hikcontroldeacceso.jpg" alt="Barrera de Acceso Vehicular con Lector de Tarjetas" class="mx-auto w-24 h-24 object-contain"> </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Control de Acceso Integrado</h3>
+                        <p class="text-gray-600 text-center">
+                            Gestión centralizada de acceso para personal y vehículos. Reconocimiento facial y LPR para optimizar el flujo y la seguridad.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                        <div class="mb-6 text-center">
+                            <img src="assets/securatech.png" alt="Monitor de Seguridad Industrial con Paneles de Cámaras" class="mx-auto w-24 h-24 object-contain"> </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Monitoreo y Seguridad Operacional</h3>
+                        <p class="text-gray-600 text-center">
+                            Videovigilancia inteligente para supervisar la producción, detectar anomalías y garantizar la seguridad de los trabajadores.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg card-shadow service-card">
+                        <div class="mb-6 text-center">
+                            <img src="assets/Bosch-Logo.png" alt="Detector de Humo o Calor Industrial" class="mx-auto w-24 h-24 object-contain"> </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Detección de Incendios Industrial</h3>
+                        <p class="text-gray-600 text-center">
+                            Soluciones avanzadas de detección de incendios adaptadas a entornos industriales. Sensores especializados para una respuesta rápida y efectiva.
+                        </p>
+                    </div>
+
+                </div>
+                <a href="#contacto" class="inline-block bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-green-700 transition duration-300 ease-in-out transform hover:scale-105 card-shadow mt-12">
+                    Consulta por Soluciones para tu Industria
+                </a>
+            </div>
+        </section>
+
+        <section id="metodologia" class="py-16 px-4 bg-white fade-in-section">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold text-green-700 mb-12">Nuestro Proceso de Trabajo</h2>
+                <p class="text-lg text-gray-700 mb-12 max-w-3xl mx-auto">
+                    En SecuraTech Solutions, garantizamos calidad y eficiencia en cada proyecto a través de un proceso claro y estructurado.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-8 rounded-lg card-shadow step-card flex flex-col items-center">
+                        <div class="text-6xl text-green-500 mb-6">🔍</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">1. Análisis y Consultoría</h3>
+                        <p class="text-gray-600 text-center">
+                            Comprendemos tus necesidades y riesgos para una solución de seguridad efectiva y personalizada.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg card-shadow step-card flex flex-col items-center">
+                        <div class="text-6xl text-green-500 mb-6">💡</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">2. Diseño a Medida</h3>
+                        <p class="text-gray-600 text-center">
+                            Creamos el diseño ideal, seleccionando tecnologías y equipos que se adapten a tu entorno y presupuesto.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg card-shadow step-card flex flex-col items-center">
+                        <div class="text-6xl text-green-500 mb-6">🛠️</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">3. Instalación Experta</h3>
+                        <p class="text-gray-600 text-center">
+                            Nuestro equipo calificado instala y configura el sistema con los más altos estándares de calidad.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg card-shadow step-card flex flex-col items-center">
+                        <div class="text-6xl text-green-500 mb-6">✅</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">4. Soporte y Mantenimiento</h3>
+                        <p class="text-gray-600 text-center">
+                            Realizamos pruebas rigurosas y ofrecemos soporte continuo para una seguridad duradera.
+                        </p>
+                    </div>
+                </div>
+                <a href="#contacto" class="inline-block bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-green-700 transition duration-300 ease-in-out transform hover:scale-105 card-shadow mt-12">
+                    Inicia Tu Proyecto Hoy
+                </a>
+            </div>
+        </section>
+
+        <section id="marcas" class="bg-white py-16 px-4 fade-in-section">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold text-green-700 mb-12">Nuestras Marcas Asociadas</h2>
+                <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
+                    Trabajamos con líderes de la industria para ofrecerte calidad y fiabilidad en cada instalación.
+                </p>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-8 items-center justify-items-center">
+                    <div class="flex items-center justify-center p-4 bg-white rounded-lg card-shadow brand-card">
+                        <img src="assets/Hikvision-Logo.jpg" alt="Logo Hikvision" title="Hikvision" class="h-12 w-auto"> </div>
+                    <div class="flex items-center justify-center p-4 bg-white rounded-lg card-shadow brand-card">
+                        <img src="assets/logo dahua.jpg" alt="Logo Dahua" title="Dahua" class="h-12 w-auto"> </div>
+                    <div class="flex items-center justify-center p-4 bg-white rounded-lg card-shadow brand-card">
+                        <img src="assets/Alcatel-Lucent-Logo.png" alt="Logo Alcatel" title="Alcatel" class="h-12 w-auto"> </div>
+                    <div class="flex items-center justify-center p-4 bg-white rounded-lg card-shadow brand-card">
+                        <img src="assets/Ubiquiti_Networks-Logo.wine.svg" alt="Logo Ubiquiti" title="Ubiquiti" class="h-12 w-auto"> </div>
+                    <div class="flex items-center justify-center p-4 bg-white rounded-lg card-shadow brand-card">
+                        <img src="assets/Bosch-Logo.png" alt="Logo Bosch" title="Bosch" class="h-12 w-auto"> </div>
+                    <div class="flex items-center justify-center p-4 bg-white rounded-lg card-shadow brand-card">
+                        <img src="assets/logo-mikrotik.png" alt="Logo Mikrotik" title="Mikrotik" class="h-12 w-auto"> </div>
+                    <div class="flex items-center justify-center p-4 bg-white rounded-lg card-shadow brand-card">
+                        <img src="assets/Furukawa_Electric-Logo.wine.png" alt="Logo Furukawa" title="Furukawa" class="h-12 w-auto"> </div>
+                </div>
+            </section>
+
+        <section id="productos" class="py-16 px-4 bg-white fade-in-section">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center text-green-700 mb-12">Productos Clave para tu Seguridad</h2>
+                <p class="text-lg text-gray-700 mb-8 text-center max-w-3xl mx-auto">
+                    Equipos de vanguardia de marcas líderes, garantizando la máxima seguridad y rendimiento en cada solución.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg card-shadow product-card flex flex-col items-center text-center">
+                        <h3 class="text-2xl font-semibold text-green-700 mb-4">Frentes de Portero</h3>
+                        <div class="w-full mb-4">
+                            <img src="assets/hikportero.jpg" alt="Frente de Portero IP Hikvision" class="w-full h-auto max-h-48 object-contain mb-2 rounded"> <p class="text-gray-800 font-semibold">Modelo DS-KM9503 - Hikvision</p>
+                            <p class="text-gray-600 text-sm">Estación maestra de videoportero con pantalla táctil, ideal para gestión centralizada en edificios.</p>
+                        </div>
+                        <div class="w-full mt-4">
+                            <h4 class="text-xl font-semibold text-gray-900 mb-2">Video de Presentación del Producto</h4>
+                            <div class="video-responsive mb-2">
+                                <iframe src="https://www.youtube.com/embed/I29_WWuntxs" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+                            <p class="text-gray-800 font-semibold">Demostración de Portero IP</p>
+                            <p class="text-gray-600 text-sm">Vea las características y funcionalidades en acción.</p>
+                        </div>
+                        <a href="#contacto" class="inline-block bg-green-500 text-white py-2 px-6 rounded-md text-sm hover:bg-green-600 transition duration-300 mt-4">Solicitar Presupuesto</a>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg card-shadow product-card flex flex-col items-center text-center">
+                        <h3 class="text-2xl font-semibold text-green-700 mb-4">Detección de Incendio</h3>
+                        <div class="w-full mb-4">
+                            <img src="assets/Bosch-Logo.png" alt="Central de Alarma de Incendio Bosch" class="w-full h-auto max-h-48 object-contain mb-2 rounded"> <p class="text-gray-800 font-semibold">Panel FPD-7024 - Bosch</p>
+                            <p class="text-gray-600 text-sm">Central de alarma de incendio direccionable, con monitoreo avanzado para detección temprana y respuesta eficaz.</p>
+                        </div>
+                        <div class="w-full">
+                            <img src="assets/Furukawa_Electric-Logo.wine.png" alt="Sensor de Humo Furukawa" class="w-full h-auto max-h-48 object-contain mb-2 rounded"> <p class="text-gray-800 font-semibold">Detector Fotoeléctrico - Furukawa</p>
+                            <p class="text-gray-600 text-sm">Detector de humo óptico de alta sensibilidad, diseñado para detección rápida y fiable de incendios incipientes.</p>
+                        </div>
+                        <a href="#contacto" class="inline-block bg-green-500 text-white py-2 px-6 rounded-md text-sm hover:bg-green-600 transition duration-300 mt-4">Solicitar Presupuesto</a>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg card-shadow product-card flex flex-col items-center text-center">
+                        <h3 class="text-2xl font-semibold text-green-700 mb-4">Control de Accesos</h3>
+                        <div class="w-full mb-4">
+                            <img src="assets/hikcontroldeacceso.jpg" alt="Módulo de Acceso con Teclado y Huella Hikvision" class="w-full h-auto max-h-48 object-contain mb-2 rounded"> <p class="text-gray-800 font-semibold">Terminal Facial DS-K1T673DWX - Hikvision</p>
+                            <p class="text-gray-600 text-sm">Terminal de reconocimiento facial con detección de fiebre, ideal para control de acceso sin contacto.</p>
+                        </div>
+                        <div class="w-full mb-4">
+                            <img src="assets/hikcontroldeacceso.jpg" alt="Terminal de Reconocimiento Facial y Huella Hikvision" class="w-full h-auto max-h-48 object-contain mb-2 rounded"> <p class="text-gray-800 font-semibold">Estación Exterior Facial DS-KD9613-E6 - Hikvision</p>
+                            <p class="text-gray-600 text-sm">Estación Exterior de Reconocimiento Facial para Videoportero, diseñada para entornos complejos.</p>
+                        </div>
+                        <a href="#contacto" class="inline-block bg-green-500 text-white py-2 px-6 rounded-md text-sm hover:bg-green-600 transition duration-300 mt-4">Solicitar Presupuesto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="py-16 px-4 bg-gray-50 fade-in-section">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center text-green-700 mb-12">¿Listo para un Diagnóstico de Seguridad?</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="lg:col-span-1">
+                        <p class="text-lg text-gray-700 mb-8">
+                            Contáctanos hoy para una consulta sin compromiso. Nuestro equipo de expertos diseñará una solución de seguridad electrónica a la medida de tu edificio, consorcio o empresa.
+                        </p>
+                        <form id="contactForm" action="https://formspree.io/f/mlekrrbn" method="POST" class="space-y-6">
+                            <p class="text-sm text-gray-500">
+                                </p>
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Nombre Completo *</label>
+                                <input type="text" id="name" name="name" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 transition duration-150">
+                                <p id="name-error" class="error-message hidden">El nombre no puede estar vacío.</p>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Correo Electrónico *</label>
+                                <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 transition duration-150">
+                                <p id="email-error" class="error-message hidden">Por favor, introduce un correo electrónico válido.</p>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700">Teléfono</label>
+                                <input type="tel" id="phone" name="phone" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 transition duration-150">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">Mensaje / Consulta *</label>
+                                <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 transition duration-150"></textarea>
+                                <p id="message-error" class="error-message hidden">El mensaje no puede estar vacío.</p>
+                            </div>
+                            <button type="submit" class="w-full bg-green-600 text-white font-bold py-3 rounded-md text-lg hover:bg-green-700 transition duration-300 ease-in-out transform hover:scale-105 card-shadow">
+                                Enviar Solicitud de Contacto
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="lg:col-span-1 space-y-8">
+                        <div class="space-y-4">
+                            <h3 class="text-2xl font-semibold text-gray-900">Nuestra Ubicación</h3>
+                            <p class="flex items-center text-gray-700"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.899a2 2 0 01-2.828 0L6.343 16.657A8 8 0 1117.657 16.657z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                                Obispo Trejo 1268, Córdoba, Argentina (CP 5000)
+                            </p>
+                            <p class="flex items-center text-gray-700"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.144a11.058 11.058 0 005.434 5.434l1.144-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                                +54 9 351 7659654
+                            </p>
+                            <p class="flex items-center text-gray-700"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                                contacto@securatechs.com.ar
+                            </p>
+                            <p class="flex items-center text-gray-700"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                Lunes a Viernes: 09:00 - 18:00
+                            </p>
+                        </div>
+                        
+                        <div class="google-map-container card-shadow">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.9912061214324!2d-64.1967619246146!3d-31.41584289871167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2656372173f%3A0xc682d46e0019273c!2sObispo%20Trejo%201268%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1700000000000!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <a href="https://wa.me/+5493517659654?text=Hola,%20me%20gustaría%20solicitar%20información%20sobre%20soluciones%20de%20seguridad." target="_blank" class="whatsapp-float" title="Contactar por WhatsApp">
+        <svg viewBox="0 0 24 24" class="whatsapp-icon"><path d="M12.001 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.001 3.25c4.875 0 8.75 3.93 8.75 8.75 0 1.944-.633 3.738-1.705 5.207l.613 2.247-2.316-.605c-1.42.92-3.085 1.451-4.783 1.451-4.875 0-8.75-3.93-8.75-8.75 0-4.82 3.875-8.75 8.75-8.75zm-4.75 6.75h-.75v4.5c0 .276-.224.5-.5.5s-.5-.224-.5-.5v-5.5c0-.276.224-.5.5-.5h1.25c.828 0 1.5.672 1.5 1.5v.5c0 .276-.224.5-.5.5s-.5-.224-.5-.5v-.5c0-.276-.224-.5-.5-.5zm5.5 0h-.75v4.5c0 .276-.224.5-.5.5s-.5-.224-.5-.5v-5.5c0-.276.224-.5.5-.5h1.25c.828 0 1.5.672 1.5 1.5v.5c0 .276-.224.5-.5.5s-.5-.224-.5-.5v-.5c0-.276-.224-.5-.5-.5zm5.5 0h-.75v4.5c0 .276-.224.5-.5.5s-.5-.224-.5-.5v-5.5c0-.276.224-.5.5-.5h1.25c.828 0 1.5.672 1.5 1.5v.5c0 .276-.224.5-.5.5s-.5-.224-.5-.5v-.5c0-.276-.224-.5-.5-.5z"/></svg>
+    </a>
+
+    <button id="backToTopBtn" title="Volver arriba">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+
+    <footer class="bg-gray-800 text-white py-10 px-4">
+        <div class="container mx-auto text-center">
+            <p class="mb-4">
+                SecuraTech Solutions - Soluciones de Seguridad Integral en Córdoba
+            </p>
+            <div class="flex justify-center space-x-6 text-sm">
+                <a href="#" class="hover:text-green-400 transition duration-300">Aviso Legal</a> <a href="#" class="hover:text-green-400 transition duration-300">Política de Privacidad</a> <a href="#" class="hover:text-green-400 transition duration-300">Términos y Condiciones</a> </div>
+            <p class="mt-4 text-gray-500 text-xs">&copy; 2023 SecuraTech Solutions. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <!-- Botón de "Volver Arriba" -->
-    <button onclick="topFunction()" id="backToTopBtn" title="Volver arriba">⬆️</button>
-
-    <!-- Botón Flotante de WhatsApp -->
-    <a href="https://wa.me/5493517659654" class="whatsapp-float" target="_blank" title="Envíanos un mensaje por WhatsApp">
-        <svg class="whatsapp-icon" viewBox="0 0 24 24">
-            <path d="M12.04 2C7.35 2 3.57 5.79 3.57 10.48C3.57 12.07 4.05 13.59 4.88 14.93L3.02 21.07L9.21 19.2C10.49 19.95 11.99 20.37 13.53 20.37C18.22 20.37 22 16.59 22 11.9C22 7.21 18.22 2 13.53 2H12.04ZM17.15 15.54C16.92 15.93 16.51 15.99 16.27 15.75L13.78 13.72C13.54 13.48 13.16 13.43 12.91 13.68C12.44 14.15 11.83 14.49 11.2 14.49C10.57 14.49 9.96 14.15 9.49 13.68C9.25 13.43 8.87 13.48 8.63 13.72L6.14 15.75C5.9 15.99 5.49 15.93 5.26 15.54C5.03 15.15 5.09 14.74 5.33 14.5L7.82 12.47C8.06 12.23 8.11 11.85 7.87 11.6L5.38 9.57C5.14 9.33 5.2 8.92 5.43 8.53C5.66 8.14 6.07 8.08 6.31 8.32L8.8 10.35C9.04 10.59 9.42 10.64 9.67 10.39C10.14 = 9.92 10.75 9.58 11.38 9.58C12.01 9.58 12.62 9.92 13.09 10.39C13.33 10.64 13.71 10.59 13.96 10.35L16.45 8.32C16.69 8.08 17.1 8.14 17.33 8.53C17.56 8.92 17.51 9.33 17.27 9.57L14.78 11.6C14.54 11.85 14.49 12.23 14.73 12.47L17.22 14.5C17.46 14.74 17.51 15.15 17.15 15.54Z"/>
-        </svg>
-    </a>
-
-
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Lógica del botón "Volver Arriba"
-            let mybutton = document.getElementById("backToTopBtn");
-            window.onscroll = function() { scrollFunction() };
+            // Lógica para el botón de Volver Arriba
+            const backToTopBtn = document.getElementById('backToTopBtn');
 
-            function scrollFunction() {
-                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                    mybutton.style.display = "block";
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTopBtn.style.display = 'flex';
                 } else {
-                    mybutton.style.display = "none";
+                    backToTopBtn.style.display = 'none';
                 }
-            }
+            });
 
-            function topFunction() {
+            backToTopBtn.addEventListener('click', () => {
                 window.scrollTo({
                     top: 0,
                     behavior: 'smooth'
                 });
-            }
+            });
 
-            // Lógica del menú desplegable para móviles
-            const menuToggle = document.getElementById('menu-toggle');
-            const menu = document.getElementById('menu');
-
-            if(menuToggle && menu) {
-                menuToggle.addEventListener('click', () => {
-                    menu.classList.toggle('hidden');
+            // Lógica de Validación de Formulario (Cliente)
+            const form = document.getElementById('contactForm');
+            if (form) {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    if (validateForm()) {
+                        // Si la validación pasa, permite que Formspree maneje el envío
+                        e.target.submit();
+                        
+                        // Opcional: Mostrar mensaje de éxito simulado si no se recarga la página
+                        alert('¡Gracias! Su mensaje ha sido enviado. Nos pondremos en contacto a la brevedad.');
+                        e.target.reset(); // Limpia el formulario
+                    }
                 });
             }
-        });
 
-        // JavaScript para la validación del formulario de contacto
-        function validateForm() {
-            let isValid = true;
-            const nombre = document.getElementById('nombre');
-            const email = document.getElementById('email');
-            const mensaje = document.getElementById('mensaje');
+            function validateForm() {
+                let isValid = true;
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-            // Reset styles and messages
-            nombre.classList.remove('input-error');
-            email.classList.remove('input-error');
-            mensaje.classList.remove('input-error');
-            document.getElementById('error-nombre').classList.add('hidden');
-            document.getElementById('error-email').classList.add('hidden');
-            document.getElementById('error-mensaje').classList.add('hidden');
+                const nombre = document.getElementById('name');
+                const email = document.getElementById('email');
+                const mensaje = document.getElementById('message');
 
-            // Validate Nombre
-            if (nombre.value.trim() === '') {
-                nombre.classList.add('input-error');
-                document.getElementById('error-nombre').classList.remove('hidden');
-                isValid = false;
-            }
+                const showValidationError = (inputElement, message) => {
+                    isValid = false;
+                    inputElement.classList.add('input-error');
+                    const errorElement = document.getElementById(`${inputElement.id}-error`);
+                    if (errorElement) {
+                        errorElement.textContent = message;
+                        errorElement.classList.remove('hidden');
+                    }
+                };
 
-            // Validate Email
-            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailPattern.test(email.value.trim())) {
-                email.classList.add('input-error');
-                document.getElementById('error-email').classList.remove('hidden');
-                isValid = false;
-            }
+                const hideValidationErrors = () => {
+                    document.querySelectorAll('.error-message').forEach(el => el.classList.add('hidden'));
+                    document.querySelectorAll('.input-error').forEach(el => el.classList.remove('input-error'));
+                };
 
-            // Validate Mensaje
-            if (mensaje.value.trim() === '') {
-                mensaje.classList.add('input-error');
-                document.getElementById('error-mensaje').classList.remove('hidden');
-                isValid = false;
-            }
+                hideValidationErrors();
 
-            if (!isValid) {
-                const firstErrorElement = document.querySelector('.input-error');
-                if (firstErrorElement) {
-                    firstErrorElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                if (nombre && nombre.value.trim() === '') showValidationError(nombre, 'El nombre no puede estar vacío.');
+                if (email && !emailPattern.test(email.value.trim())) showValidationError(email, 'Por favor, introduce un correo electrónico válido.');
+                if (mensaje && mensaje.value.trim() === '') showValidationError(mensaje, 'El mensaje no puede estar vacío.');
+
+                if (!isValid) {
+                    const firstErrorElement = document.querySelector('.input-error');
+                    if (firstErrorElement) firstErrorElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    return false;
                 }
-            } else {
-                console.log("Formulario enviado con éxito (simulado)");
-                alert('¡Gracias! Su mensaje ha sido enviado.');
-                document.getElementById('contactForm').reset();
-            }
+                return true;
+            };
 
-            return false;
-        }
+            // Lógica para efectos de entrada gradual (fade-in)
+            const fadeInElements = document.querySelectorAll('.fade-in-section');
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1 // 10% de visibilidad para activar
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target); // Dejar de observar una vez visible
+                    }
+                });
+            }, observerOptions);
+
+            fadeInElements.forEach(el => {
+                observer.observe(el);
+            });
+
+        });
     </script>
 </body>
 </html>
